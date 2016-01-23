@@ -32,18 +32,21 @@
 
 <section class="panel b-blue" id="home">
 	    <div class="jumbotron">
-		<h1 class="panel__headline" id="aboutUs">hgfnhfnb</h1>
-	    </div>
-<<<<<<< HEAD
+	    
+	    	<svg height="100" width="100">
+				<circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" /> 
+		</svg></div>
+
+
  </section>
-=======
+
     <div class="panel__content">
       <h1 class="panel__headline" id="aboutUs"></h1>
        	<ul>
 	     </ul>
     </div>
 </section>
->>>>>>> 5adabf8bb67a27ae465ef47469e952d9b03933a9
+
 
 
 <section class="panel b-orange" id="1">
