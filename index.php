@@ -1,6 +1,7 @@
 <html>
 	<head>
 		<title> Calorie Detector </title>
+		<link rel="stylesheet" type="text/css" href="animate.css"> 
 		<link rel="stylesheet" type="text/css" href="main.css"> 
 		<link rel="stylesheet" type="text/css" href="normalize.css"> 
 		
@@ -10,11 +11,13 @@
 		
 		<script src="jquery-1.12.0.min.js"></script>
 	
-		<script>
+		<script type="text/javascript">
 			$(document).ready(function() {
-				
+				$("p").animate({height: "+=40px"}, 2000, "easeOutBounce");
 			});
 		</script>
+		
+		<p>hahahaha</p>
 		
 		<div class="nav-container">
 			<nav>
@@ -31,13 +34,12 @@
 
 
 <section class="panel b-blue" id="home">
-	    <div class="b-image">{
-		<div class="circle-image">{
-		}
-		}
-		<h1 class="panel__headline" id="aboutUs">hgfnhfnb</h1>
-	    </div>
 
+	    <div class="jumbotron">
+	    
+	    	<svg height="100" width="100">
+				<circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" /> 
+		</svg></div>
  </section>
 
     <div class="panel__content">
@@ -67,7 +69,7 @@
 	      <ul >
 	      	<li>Michael Liu</li>
 	      		<ol>
-	      		<li>Email: <a href="#">michael2b.liu@mail.utoronto.ca</a></li>
+	      		<li>Email: <a href="#">michaelzb.liu@mail.utoronto.ca</a></li>
 	      		<li>Phone: (416)-576-7101</a></li>
 	      		<li>University Of Toronto (year 1)</li></ol>
 	      </ul></div>

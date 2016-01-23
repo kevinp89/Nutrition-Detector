@@ -9,9 +9,16 @@ body {
   overflow: hidden;
 }
 
-.b-image{
 
+.jumbotron{
 	position: relative;
+	float: left;s
+	top: 0;
+	margin-left: 0;
+	height: 100%;
+	width: 100%;
+	position: relative;
+	background: url("grapes.jpg");
 	background-size: cover;
 	width: 100px;
     height:100px;
