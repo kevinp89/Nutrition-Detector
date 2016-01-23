@@ -22,7 +22,7 @@
 			<ul>
 				<li><a href="#home"> <img height="40px" width="40px" src="simple-orange-house-md.png"> </a></li>
 				<li><a href="#2"> <img height="40px" width="40px" src="search.png"> </a></li>
-				<li><a href="#3"> <img height="40px" width="40px" src="news.png"> </a></li>
+				<li><a href="#3"> <img height="40px" width="40px" src="facts.png"> </a></li>
 				<li><a href="#1"> <img height="40px" width="40px" src="aboutUs.png"> </a></li>
 				
 			</ul>
@@ -112,26 +112,17 @@
   
   
 </section>
+
 <section class="panel b-red" id="3">
   <article class="panel__wrapper">
     <div class="panel__content">
-      <h1 class="panel__headline"><i class="fa fa-music"></i>&nbsp;Music</h1>
+      <h1 class="panel__headline"><i class="fa fa-music"></i>&nbsp;Facts</h1>
       <div class="panel__block"></div>
       <p>Beard sriracha kitsch literally, taxidermy normcore aesthetic wayfarers salvia keffiyeh farm-to-table sartorial gluten-free mlkshk. Selvage normcore 3 wolf moon, umami Kickstarter artisan meggings cardigan drinking vinegar bicycle rights.</p>
     </div>
   </article>
 </section>
 
-
-<section class="panel b-green" id="4">
-  <article class="panel__wrapper">
-    <div class="panel__content">
-      <h1 class="panel__headline"><i class="fa fa-paper-plane"></i>&nbsp;Paper Planes</h1>
-      <div class="panel__block"></div>
-      <p>90's wayfarers lomo you probably haven't heard of them trust fund banh mi. Flannel Shoreditch dreamcatcher, quinoa flexitarian Banksy pickled post-ironic lo-fi. Photo booth asymmetrical tousled letterpress.</p>
-    </div>
-  </article>
-</section>
 			
 			
 		</div>
