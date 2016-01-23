@@ -36,41 +36,45 @@ nav ul li{
 
 .panel {
   min-height: 100vh;
-  display: -webkit-box;
+  /*
+display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+*/
+  margin-left: 80px;
   overflow: hidden;
 }
 
-.panel__content h1, ul{
-	text-align: left;
-	left: 0;
-	margin-left: 0;
+
+.panel__content div{
+	padding-right: 30px;
 }
 
-
-#1{
+.panel__content ul{
+	display: inline;
+	list-style: none;
+	padding-right: 20px;
 	left: 0;
-	margin-left: 0;
-}
-
-#about-content{
-	left: 0;
-	margin-left: 0;
-}
-
-#aboutUs{
-	left: 0;
-	margin-left: 0;
-	text-align: left;
+	clear: both;
 	
+}
+
+.panel__content ol{
+	list-style: none;
+}
+
+#sr{
+	
+	clear: both;
+	float: left;
+}
+
+#ml{
+	clear: both;
+	float: left;
+}
+
+#nd{
+	margin-left: 100px;
 }

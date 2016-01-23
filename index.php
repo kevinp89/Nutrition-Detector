@@ -22,13 +22,57 @@
 
 <section class="panel b-blue" id="1">
     <div class="panel__content">
-      <h1 class="panel__headline" id="aboutUs"><i class="fa fa-camera-retro"></i>About Us</h1>
-       	<ul>
+      <h1 class="panel__headline" id="aboutUs">About Us</h1>
+       	
+       	<div id="sr">
+	      <ul >
+	      	<li>Seungmoon Rieh</li>
+	      		<ol>
+	      		<li>Email: <a href="#">seungmoon.rieh@mail.utoronto.ca</a></li>
+	      		<li>Phone: (647)-876-0888</a></li>
+	      		<li>EngSci Grad 2015</li></ol>
+	      </ul></div>
+	      
+	      
+	      <div id="ml">
+	      <ul >
+	      	<li>Michael Liu</li>
+	      		<ol>
+	      		<li>Email: <a href="#">michael2b.liu@mail.utoronto.ca</a></li>
+	      		<li>Phone: (416)-576-7101</a></li>
+	      		<li>University Of Toronto (year 1)</li></ol>
+	      </ul></div>
+	            
+	     <div id="nd">  
+	     <ul >
+	      	<li>Nikita Dua</li>
+	      		<ol>
+	      		<li>Email: <a href="#">nikita.dua@mail.utoronto.ca</a></li>
+	      		<li>Phone: (647)-979-3634</a></li>
+	      		<li>University Of Toronto (year 2)</li></ol>
+	      	</ul></div>
+	      
+	      <div id="mi">
+	      <ul >
+	      	<li>Monica Iqbal</li>
+	      		<ol>
+	      		<li>Email: <a href="#">monica.iqbal@mail.utoronto.ca</a></li>
+	      		<li>Phone: (905)-830-4256</a></li>
+	      		<li>University Of Toronto (year 2)</li></ol>
+	      		
+	      	</ul></div>
+	      
+	      <div id="kp">
+	      <ul >
 	      	<li>Kevin Patel</li>
+	      		<ol>
 	      		<li>Email: <a href="#">kp.patel@mail.utoronto.ca</a></li>
-      	</ul>
-      
-      
+	      		<li>Phone: (905)-463-1366</a></li>
+	      		<li>University Of Toronto (year 2)</li></ol>
+	      		
+	      	</ul></div>
+
+
     </div>
   </article>
 </section>
