@@ -19,7 +19,7 @@ if(isset($_POST["picture"])) {
 }
 // Check file size
 if ($_FILES["fileToUpload"]["size"] > 5000000) {
-    echo "Sorry, your file is too large.";
+    //echo "Sorry, your file is too large.";
     $uploadOk = 0;
 }
 // Allow certain file formats
@@ -30,7 +30,7 @@ if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg
 }
 // Check if $uploadOk is set to 0 by an error
 if ($uploadOk == 0) {
-    echo "Sorry, your file was not uploaded.";
+    //echo "Sorry, your file was not uploaded.";
 // if everything is ok, try to upload file
 } else {
     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {  
@@ -40,7 +40,7 @@ if ($uploadOk == 0) {
 	//echo $path;
 	run($path);
     } else {
-        echo "Sorry, there was an error uploading your file.";
+        //echo "Sorry, there was an error uploading your file.";
     }
 }
 
@@ -121,37 +121,83 @@ curl_close ($ch);
 $_SESSION["photo"] = $path;
 $_SESSION["name"] = $name;
 $_SESSION["calories"] = round($sum / $count);
-header("location: res.php");
+//header("location: res.php");
 }
 ?>
 
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Calorie Detector!</title>
-	<link rel="stylesheet" type="text/css" href="animate.css/animate.min.css">
+<style>
+input[type='file'] {
+  color: transparent;
+}
+div.fancy-file {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+div.fancy-file-name {
+    float: left;
+    border-radius: 3px;
+    background-color: #fff;
+    box-shadow:
+        inset 1px 1px 3px #eee,
+        inset -1px -1px 3px #888,
+        1px 1px 3px #222;
+    font-weight: bold;
+    font-family: Courier New, fixed;
+    width: 155px;
+    font-size: 12px;
+    padding: 1px 4px;
+    height: 50px;
+}
+div.input-container {
+    position: absolute;
+    top: 0; left: 0;
+}
+
+div.input-container input {
+    opacity: 0;
+}
+</style>
 </head>
 <body>
 
 
-<form action="ca.php" method="post" enctype="multipart/form-data" style="display:inline-block;">
-      		<span class="btn btn-default btn-file">
-                        Select Image<input name="fileToUpload" type="file" accept="image/*" capture="camera"> 
-                    </span>       
-                    <button name="picture" type="submit" class="btn btn-default">
-                        Upload it!
-                    </button>
-                </form>
+<form action="ca.php" method="post" enctype="multipart/form-data" id="form">
+<div class='fancy-file'>
+    <div class='fancy-file-name'><img src="http://simpleicon.com/wp-content/uploads/camera.png" style="width:155px; height:50px;">></div>
+    <div class='input-container'>    	
+	
+      <input name="fileToUpload" type="file" id="file" accept="image/*" capture="camera"> 
+</div>
+</div>
+
+</form>
 <?php
 if ( isset($_SESSION["photo"]) ) {
 echo "<img src=".$_SESSION["photo"]." style='width:200px; height:200px;'>";
 echo "<h1>".$_SESSION["name"]."</h1>";
-echo "<h1 class="animated bounce">".$_SESSION["calories"]."</h1>";
+echo "<h1>Calories: ".$_SESSION["calories"]."</h1>";
 
 } 
 ?>
 <script>
+document.getElementById("file").onchange = function() {
+document.getElementById("form").submit();
 
+$('div.fancy-file input:file').bind('change blur', function() {
+    var $inp = $(this), fn;
+
+    fn = $inp.val();
+    if (/fakepath/.test(fn))
+        fn = fn.replace(/^.*\\/, '');
+
+    $inp.closest('.fancy-file').find('.fancy-file-name').text(fn);
+});
+}
 </script>
 </body>
 </html>
