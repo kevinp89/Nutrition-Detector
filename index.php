@@ -57,7 +57,7 @@
 	      	<li>Monica Iqbal</li>
 	      		<ol>
 	      		<li>Email: <a href="#">monica.iqbal@mail.utoronto.ca</a></li>
-	      		<li>Phone: (905)-830-4256</a></li>
+	      		<li>Phone: (647)-830-4256</a></li>
 	      		<li>University Of Toronto (year 2)</li></ol>
 	      		
 	      	</ul></div>
@@ -102,6 +102,8 @@
     </div>
   </article>
 </section>
+
+
 <section class="panel b-green" id="4">
   <article class="panel__wrapper">
     <div class="panel__content">
