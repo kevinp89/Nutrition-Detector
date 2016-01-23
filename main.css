@@ -23,6 +23,7 @@ body {
 
 
 .nav-container{
+	z-index: 90000;
 	position: fixed;
 	padding: 0;
 	top: 0;
@@ -30,8 +31,7 @@ body {
 	height: 100%;
 	width: 60px;
 	background: #001a09;
-	transition: width ease .5s;
-	
+	transition: width ease .5s;	
 }
 
 nav ul {
@@ -45,11 +45,20 @@ nav ul {
 nav ul li{
 	left: 0;
 	margin-left: 0;
-	padding-top: 90px;
+	padding-top: 90px;	
 }
 
-.nav-container nav ul li a:hover{
-	color: red;
+.nav-container nav ul li a:active, a:visited{
+	color: #cf0000;
+}
+
+.nav-container nav ul li img:hover{
+	z-index: 90000;
+	height: 55px;
+	width: 55px;
+	transition:  .2s ease-in-out;
+    -moz-transition:  .2s ease-in-out;
+    -webkit-transition:  .2s ease-in-out;
 }
 
 .panel {
