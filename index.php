@@ -23,18 +23,9 @@
 
 <section class="panel b-blue" id="home">
 	    <div class="jumbotron">
-		<h1 class="panel__headline" id="aboutUs"></h1>
+		<h1 class="panel__headline" id="aboutUs">hgfnhfnb</h1>
 	    </div>
-    <div class="panel__content">
-      <h1 class="panel__headline" id="aboutUs"></h1>
-       	<ul>
-	     </ul>
-      
-      
-    </div>
-
-  </article>
-</section>
+ </section>
 
 
 <section class="panel b-orange" id="1">

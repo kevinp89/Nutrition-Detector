@@ -9,10 +9,6 @@ body {
   overflow: hidden;
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> c7545479aad30986f27cedc4810e69cb0c6ce98c
 .jumbotron{
 	position: relative;
 	float: left;
@@ -22,7 +18,7 @@ body {
 	left: 0;
 	height: 100%;
 	width: 100%;
-<<<<<<< HEAD
+	
 	position: fixed;
 	-webkit-filter: blur(5px);
     -moz-filter: blur(5px);
@@ -30,13 +26,12 @@ body {
     -ms-filter: blur(5px);
     filter: blur(5px);
 }
-=======
+
 	background: url("grapes.jpg");
 	background-size: cover;
 	
 }
 
->>>>>>> c7545479aad30986f27cedc4810e69cb0c6ce98c
 
 .nav-container{
 	position: fixed;
