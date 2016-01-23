@@ -20,6 +20,7 @@
 			
 		</div>
 
+<<<<<<< HEAD
 <section class="panel b-blue" id="home">
     <div class="panel__content">
       <h1 class="panel__headline" id="aboutUs"><i class="fa fa-camera-retro"></i>About Us</h1>
@@ -95,13 +96,8 @@
   
     <div class="panel__content" id="about-content">
       <h1 class="panel__headline"><i class="fa fa-bolt"></i>&nbsp;Search</h1>
-      <div class="panel__block">
-	
-      </div>
-      <form id="searchbox" action="">
-		 	<input id="search" type="text" placeholder="Type here">
-		 	<input id="submit" type="submit" value="Search">
-			</form>
+      <div class="panel__block"></div>
+      
       
         </div>
 </section></div>
