@@ -11,13 +11,12 @@ body {
 
 .jumbotron{
 	position: relative;
-	float: left;
-	padding: 0;
-	margin: 0;
+	float: left;s
 	top: 0;
-	left: 0;
+	margin-left: 0;
 	height: 100%;
 	width: 100%;
+<<<<<<< HEAD
 	
 	position: fixed;
 	-webkit-filter: blur(5px);
@@ -27,11 +26,23 @@ body {
     filter: blur(5px);
 }
 
+=======
+	position: relative;
+	-webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -o-filter: blur(3px);
+    -ms-filter: blur(3px);
+    filter: blur(3px);
+>>>>>>> 5adabf8bb67a27ae465ef47469e952d9b03933a9
 	background: url("grapes.jpg");
 	background-size: cover;
 	
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5adabf8bb67a27ae465ef47469e952d9b03933a9
 
 .nav-container{
 	position: fixed;
@@ -78,6 +89,15 @@ nav ul li{
 	clear: both;
 	
 }
+
+.b-orange{
+	background-color: rgba(255,  213,  186, 0.27);
+}
+
+.b-orange div{
+	margin-left: 30px;
+}
+
 #2 form{
 		width: 500 px;
 		margin: 50px auto;

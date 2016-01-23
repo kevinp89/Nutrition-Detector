@@ -1,19 +1,28 @@
 <html>
 	<head>
-		
 		<title> Calorie Detector </title>
 		<link rel="stylesheet" type="text/css" href="main.css"> 
 		<link rel="stylesheet" type="text/css" href="normalize.css"> 
 		
 	</head>
 	<body>
+		<script src="jquery-1.12.0.js"></script>
+		
+		<script src="jquery-1.12.0.min.js"></script>
+	
+		<script>
+			$(document).ready(function() {
+				
+			});
+		</script>
+		
 		<div class="nav-container">
 			<nav>
 			<ul>
 				<li><a href="#home"> <img height="40px" width="40px" src="simple-orange-house-md.png"> </a></li>
-				<li><a href="#1"> <img height="40px" width="40px" src="aboutUs.png"> </a></li>
 				<li><a href="#2"> <img height="40px" width="40px" src="search.png"> </a></li>
 				<li><a href="#3"> <img height="40px" width="40px" src="news.png"> </a></li>
+				<li><a href="#1"> <img height="40px" width="40px" src="aboutUs.png"> </a></li>
 				
 			</ul>
 			</nav>
@@ -25,12 +34,21 @@
 	    <div class="jumbotron">
 		<h1 class="panel__headline" id="aboutUs">hgfnhfnb</h1>
 	    </div>
+<<<<<<< HEAD
  </section>
+=======
+    <div class="panel__content">
+      <h1 class="panel__headline" id="aboutUs"></h1>
+       	<ul>
+	     </ul>
+    </div>
+</section>
+>>>>>>> 5adabf8bb67a27ae465ef47469e952d9b03933a9
 
 
 <section class="panel b-orange" id="1">
     <div class="panel__content">
-      <h1 class="panel__headline" id="aboutUs">About Us</h1>
+      <h1 class="panel__headline" id="aboutUs">Contact Us</h1>
        	
        	<div id="sr">
 	      <ul >
