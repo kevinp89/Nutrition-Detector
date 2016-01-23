@@ -10,10 +10,10 @@
 		<div class="nav-container">
 			<nav>
 			<ul>
-				<li><a href="#home"> Home </a></li>
-				<li><a href="#1"> About Us </a></li>
-				<li><a href="#2"> Search </a></li>
-				<li><a href="#3"> News </a></li>
+				<li><a href="#home"> <img height="40px" width="40px" src="simple-orange-house-md.png"> </a></li>
+				<li><a href="#1"> <img height="40px" width="40px" src="aboutUs.png"> </a></li>
+				<li><a href="#2"> <img height="40px" width="40px" src="search.png"> </a></li>
+				<li><a href="#3"> <img height="40px" width="40px" src="news.png"> </a></li>
 				
 			</ul>
 			</nav>
