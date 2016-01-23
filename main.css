@@ -41,8 +41,13 @@ display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
+  margin-left: 80px;
+
+=======
 */
   margin-left: 80px;
+>>>>>>> 188570745ca9e9cd4c77d9a9a054c21b8c62c6c9
   overflow: hidden;
 }
 
@@ -59,6 +64,25 @@ display: -webkit-box;
 	clear: both;
 	
 }
+#2 form{
+		width: 500 px;
+		margin: 50px auto;
+	}
+#search{
+	padding:8px 20px;
+	background: #0e9696;
+	border:0px solid black;
+	
+}
+#submit{
+	position:relative;
+	padding: 6px 15px;
+	left:=8px;
+	border:100px solid #000000;
+	background-color:#b51c1c;
+	color:fuchsia;
+}
+
 
 .panel__content ol{
 	list-style: none;
