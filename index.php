@@ -31,19 +31,22 @@
 
 
 <section class="panel b-blue" id="home">
-	    <div class="jumbotron">
+	    <div class="b-image">{
+		<div class="circle-image">{
+		}
+		}
 		<h1 class="panel__headline" id="aboutUs">hgfnhfnb</h1>
 	    </div>
-<<<<<<< HEAD
+
  </section>
-=======
+
     <div class="panel__content">
       <h1 class="panel__headline" id="aboutUs"></h1>
        	<ul>
 	     </ul>
     </div>
 </section>
->>>>>>> 5adabf8bb67a27ae465ef47469e952d9b03933a9
+
 
 
 <section class="panel b-orange" id="1">
