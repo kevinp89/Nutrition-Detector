@@ -17,17 +17,34 @@
 		<div class="nav-container">
 			<nav>
 			<ul>
-				<li><a href="index.php"> Home </a></li>
-				<li><a href="#1"> About Us </a></li>
-				<li><a href="#2"> Search </a></li>
-				<li><a href="#3"> News </a></li>
+				<li><a href="#home"> <img height="40px" width="40px" src="simple-orange-house-md.png"> </a></li>
+				<li><a href="#1"> <img height="40px" width="40px" src="aboutUs.png"> </a></li>
+				<li><a href="#2"> <img height="40px" width="40px" src="search.png"> </a></li>
+				<li><a href="#3"> <img height="40px" width="40px" src="news.png"> </a></li>
 				
 			</ul>
 			</nav>
 			
 		</div>
 
-<section class="panel b-blue" id="1">
+
+<section class="panel b-blue" id="home">
+	    <div class="jumbotron">
+		<h1 class="panel__headline" id="aboutUs"></h1>
+	    </div>
+    <div class="panel__content">
+      <h1 class="panel__headline" id="aboutUs"></h1>
+       	<ul>
+	     </ul>
+      
+      
+    </div>
+
+  </article>
+</section>
+
+
+<section class="panel b-orange" id="1">
     <div class="panel__content">
       <h1 class="panel__headline" id="aboutUs">About Us</h1>
        	
@@ -64,7 +81,7 @@
 	      	<li>Monica Iqbal</li>
 	      		<ol>
 	      		<li>Email: <a href="#">monica.iqbal@mail.utoronto.ca</a></li>
-	      		<li>Phone: (905)-830-4256</a></li>
+	      		<li>Phone: (647)-830-4256</a></li>
 	      		<li>University Of Toronto (year 2)</li></ol>
 	      		
 	      	</ul></div>
@@ -85,7 +102,7 @@
 </section>
 
 
-
+<div class="search">
 <section class="panel b-yellow" id="2">
   
     <div class="panel__content" id="about-content">
@@ -94,8 +111,8 @@
       
       
         </div>
-  
-  
+</section></div>
+
   
   
   
@@ -109,6 +126,8 @@
     </div>
   </article>
 </section>
+
+
 <section class="panel b-green" id="4">
   <article class="panel__wrapper">
     <div class="panel__content">
