@@ -17,8 +17,6 @@
 			});
 		</script>
 		
-		<p>hahahaha</p>
-		
 		<div class="nav-container">
 			<nav>
 			<ul>
@@ -36,19 +34,10 @@
 <section class="panel b-blue" id="home">
 
 	    <div class="jumbotron">
-	    
 	    	<svg height="100" width="100">
 				<circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" /> 
 		</svg></div>
  </section>
-
-    <div class="panel__content">
-      <h1 class="panel__headline" id="aboutUs"></h1>
-       	<ul>
-	     </ul>
-    </div>
-</section>
-
 
 
 <section class="panel b-orange" id="1">
@@ -102,7 +91,6 @@
 	      		<li>University Of Toronto (year 2)</li></ol>
 	      		
 	      	</ul></div>
-
 
     </div>
   </article>

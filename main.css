@@ -9,25 +9,16 @@ body {
   overflow: hidden;
 }
 
-
 .jumbotron{
 	position: relative;
-	float: left;s
+	float: left;
 	top: 0;
 	margin-left: 0;
 	height: 100%;
 	width: 100%;
-	position: relative;
-	background: url("grapes.jpg");
+    float: left;
+    background:url("grapes.jpg" );
 	background-size: cover;
-	width: 100px;
-    height:100px;
-    float:left;
-    background:url("grapes.jpg" )no-repeat bottom right;
-	
-}
-.circle-image{
-	background:url("take.png" )no-repeat bottom right;
 }
 
 
@@ -55,6 +46,10 @@ nav ul li{
 	left: 0;
 	margin-left: 0;
 	padding-top: 90px;
+}
+
+.nav-container nav ul li a:hover{
+	color: red;
 }
 
 .panel {
@@ -89,6 +84,7 @@ nav ul li{
 		width: 500 px;
 		margin: 50px auto;
 	}
+	
 #search{
 	padding:8px 20px;
 	background: #0e9696;
