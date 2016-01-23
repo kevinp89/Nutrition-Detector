@@ -52,9 +52,10 @@ nav ul li{
 
 .nav-container nav ul li a:active, a:visited{
 	color: #cf0000;
+	z-index: 90000;
 }
 
-.nav-container nav ul li img:hover{
+.nav-container nav ul li a img:hover{
 	z-index: 90000;
 	height: 55px;
 	width: 55px;
@@ -66,6 +67,7 @@ nav ul li{
 
 @media screen and (max-width: 580px){
 	nav ul li{
+		z-index: 90000;
 		box-sizing: border-box;
 		width: 100%;
 		padding-top: 55px;
@@ -121,6 +123,16 @@ nav ul li{
 	}
    
 }
+
+.b-red{
+	background-image: url("factsImage.jpg");
+	background-size: cover;
+}
+
+.b-red p{
+	color: white;
+}
+
 
 #2 form{
 		width: 500 px;
