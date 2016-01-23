@@ -70,6 +70,15 @@ nav ul li{
 	clear: both;
 	
 }
+
+.b-orange{
+	background-color: rgba(255,  213,  186, 0.27);
+}
+
+.b-orange div{
+	margin-left: 30px;
+}
+
 #2 form{
 		width: 500 px;
 		margin: 50px auto;

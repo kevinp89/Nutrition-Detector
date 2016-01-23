@@ -11,9 +11,9 @@
 			<nav>
 			<ul>
 				<li><a href="#home"> <img height="40px" width="40px" src="simple-orange-house-md.png"> </a></li>
-				<li><a href="#1"> <img height="40px" width="40px" src="aboutUs.png"> </a></li>
 				<li><a href="#2"> <img height="40px" width="40px" src="search.png"> </a></li>
 				<li><a href="#3"> <img height="40px" width="40px" src="news.png"> </a></li>
+				<li><a href="#1"> <img height="40px" width="40px" src="aboutUs.png"> </a></li>
 				
 			</ul>
 			</nav>
@@ -29,17 +29,13 @@
       <h1 class="panel__headline" id="aboutUs"></h1>
        	<ul>
 	     </ul>
-      
-      
     </div>
-
-  </article>
 </section>
 
 
 <section class="panel b-orange" id="1">
     <div class="panel__content">
-      <h1 class="panel__headline" id="aboutUs">About Us</h1>
+      <h1 class="panel__headline" id="aboutUs">Contact Us</h1>
        	
        	<div id="sr">
 	      <ul >
