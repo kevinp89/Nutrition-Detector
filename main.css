@@ -9,7 +9,7 @@ body {
   overflow: hidden;
 }
 
-<<<<<<< HEAD
+
 .jumbotron{
 	background: url("grapes.jpg");
 	background-size: cover;
@@ -17,8 +17,7 @@ body {
 	width: 100%;
 	position: fixed;
 }
-=======
->>>>>>> 1394f1fb3de50d8d99e9612d3628021b299f0c8e
+
 
 .nav-container{
 	position: fixed;
