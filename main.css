@@ -6,7 +6,9 @@ body {
   font-family: 'Lato';
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  overflow: hidden;
 }
+
 
 .nav-container{
 	position: fixed;
@@ -36,18 +38,7 @@ nav ul li{
 
 .panel {
   min-height: 100vh;
-  /*
-display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-<<<<<<< HEAD
   margin-left: 80px;
-
-=======
-*/
-  margin-left: 80px;
->>>>>>> 188570745ca9e9cd4c77d9a9a054c21b8c62c6c9
   overflow: hidden;
 }
 

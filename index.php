@@ -1,9 +1,3 @@
-<script>
-	$(document).ready(function() {
-		
-	});
-</script> 
-
 <html>
 	<head>
 		
@@ -30,7 +24,7 @@
     <div class="panel__content">
       <h1 class="panel__headline" id="aboutUs"><i class="fa fa-camera-retro"></i>About Us</h1>
        	<ul>
-	      	      	</ul>
+	     </ul>
       
       
     </div>
@@ -96,7 +90,7 @@
 </section>
 
 
-
+<div class="search">
 <section class="panel b-yellow" id="2">
   
     <div class="panel__content" id="about-content">
@@ -110,8 +104,8 @@
 			</form>
       
         </div>
-  
-  
+</section></div>
+
   
   
   
