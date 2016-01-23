@@ -1,3 +1,9 @@
+<script>
+	$(document).ready(function() {
+		
+	});
+</script> 
+
 <html>
 	<head>
 		
@@ -10,7 +16,7 @@
 		<div class="nav-container">
 			<nav>
 			<ul>
-				<li><a href="index.php"> Home </a></li>
+				<li><a href="#home"> Home </a></li>
 				<li><a href="#1"> About Us </a></li>
 				<li><a href="#2"> Search </a></li>
 				<li><a href="#3"> News </a></li>
@@ -20,7 +26,19 @@
 			
 		</div>
 
-<section class="panel b-blue" id="1">
+<section class="panel b-blue" id="home">
+    <div class="panel__content">
+      <h1 class="panel__headline" id="aboutUs"><i class="fa fa-camera-retro"></i>About Us</h1>
+       	<ul>
+	      	      	</ul>
+      
+      
+    </div>
+  </article>
+</section>
+
+
+<section class="panel b-orange" id="1">
     <div class="panel__content">
       <h1 class="panel__headline" id="aboutUs">About Us</h1>
        	
@@ -83,8 +101,13 @@
   
     <div class="panel__content" id="about-content">
       <h1 class="panel__headline"><i class="fa fa-bolt"></i>&nbsp;Search</h1>
-      <div class="panel__block"></div>
-      
+      <div class="panel__block">
+	
+      </div>
+      <form id="searchbox" action="">
+		 	<input id="search" type="text" placeholder="Type here">
+		 	<input id="submit" type="submit" value="Search">
+			</form>
       
         </div>
   
