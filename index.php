@@ -1,21 +1,19 @@
-<link rel="stylesheet" href="bower_components/Morphext/dist/morphext.css">
-
-<script src="bower_components/Morphext/dist/morphext.min.js">
-	$(document).ready(function() {
-		
-	});
-	
-</script>
-
 <html>
 	<head>
-		
 		<title> Calorie Detector </title>
 		<link rel="stylesheet" type="text/css" href="main.css"> 
 		<link rel="stylesheet" type="text/css" href="normalize.css"> 
 		
 	</head>
 	<body>
+		<script src="jquery-1.12.0.js">
+		</script>
+		
+		<script src="jquery-1.12.0.min.js">
+		</script>
+		
+		
+
 		<div class="nav-container">
 			<nav>
 			<ul>
