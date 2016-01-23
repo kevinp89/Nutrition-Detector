@@ -20,7 +20,6 @@
 			
 		</div>
 
-<<<<<<< HEAD
 <section class="panel b-blue" id="home">
     <div class="panel__content">
       <h1 class="panel__headline" id="aboutUs"><i class="fa fa-camera-retro"></i>About Us</h1>
