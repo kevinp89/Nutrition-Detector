@@ -34,7 +34,7 @@
 <section class="panel b-blue" id="home">
 
 	    <div class="jumbotron">
-		<button id="button_id" />
+		<button class="upload_button"><img src="upload.png" style="width:70%; height:70%; display:block; margin-right:auto; margin-left:auto; ">Upload Photo</button>
 	    </div>
  </section>
 
