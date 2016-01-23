@@ -20,20 +20,13 @@
 			
 		</div>
 
+
 <section class="panel b-blue" id="home">
-
-   
 	    <div class="jumbotron">
-      <h1 class="panel__headline" id="aboutUs"><i class="fa fa-camera-retro"></i>Home</h1>
-      
-      
-      
-      
+		<h1 class="panel__headline" id="aboutUs"></h1>
 	    </div>
-
-
     <div class="panel__content">
-      <h1 class="panel__headline" id="aboutUs"><i class="fa fa-camera-retro"></i>About Us</h1>
+      <h1 class="panel__headline" id="aboutUs"></h1>
        	<ul>
 	     </ul>
       
@@ -45,8 +38,6 @@
 
 
 <section class="panel b-orange" id="1">
-
-
     <div class="panel__content">
       <h1 class="panel__headline" id="aboutUs">About Us</h1>
        	
