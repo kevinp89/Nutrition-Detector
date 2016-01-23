@@ -11,9 +11,13 @@
 		
 		<script src="jquery-1.12.0.min.js">
 		</script>
+	
+		<script>
+			$(document).ready(function() {
+				
+			});
+		</script>
 		
-		
-
 		<div class="nav-container">
 			<nav>
 			<ul>
