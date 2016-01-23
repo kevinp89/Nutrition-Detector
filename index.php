@@ -1,11 +1,12 @@
 <html>
 	<head>
-		<title> Calorie Detector </title> 
+		<title> Calorie Detector </title>
 		<link rel="stylesheet" type="text/css" href="main.css"> 
 		<link rel="stylesheet" type="text/css" href="normalize.css"> 
 		
 	</head>
-	<body>		
+	<body>
+				
 		<div class="nav-container">
 			<nav>
 			<ul>

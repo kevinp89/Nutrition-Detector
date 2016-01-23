@@ -129,13 +129,9 @@ header("location: res.php");
 <html>
 <head>
 	<title>Calorie Detector!</title>
-	<link rel="stylesheet" type="text/css" href="animate.css">
+	<link rel="stylesheet" type="text/css" href="animate.css/animate.min.css">
 </head>
 <body>
-
-<script src="jquery-1.12.0.js"></script>
-
-<script src="jquery-1.12.0.min.js"></script>
 
 
 <form action="ca.php" method="post" enctype="multipart/form-data" style="display:inline-block;">
@@ -150,7 +146,7 @@ header("location: res.php");
 if ( isset($_SESSION["photo"]) ) {
 echo "<img src=".$_SESSION["photo"]." style='width:200px; height:200px;'>";
 echo "<h1>".$_SESSION["name"]."</h1>";
-echo "<h1>".$_SESSION["calories"]."</h1>";
+echo "<h1 class="animated bounce">".$_SESSION["calories"]."</h1>";
 
 } 
 ?>
