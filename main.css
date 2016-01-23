@@ -40,14 +40,8 @@ nav ul li{
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  margin-left: 80px;
+
   overflow: hidden;
 }
 
@@ -62,6 +56,25 @@ nav ul li{
 	left: 0;
 	margin-left: 0;
 }
+#2 form{
+		width: 500 px;
+		margin: 50px auto;
+	}
+#search{
+	padding:8px 20px;
+	background: #0e9696;
+	border:0px solid black;
+	
+}
+#submit{
+	position:relative;
+	padding: 6px 15px;
+	left:=8px;
+	border:100px solid #000000;
+	background-color:#b51c1c;
+	color:fuchsia;
+}
+
 
 #about-content{
 	left: 0;
