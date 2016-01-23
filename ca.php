@@ -128,6 +128,8 @@ $_SESSION["calories"] = round($sum / $count);
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" href="animate.css/animate.min.css">
+
 <style>
 input[type='file'] {
   color: transparent;
@@ -151,7 +153,7 @@ div.fancy-file-name {
     width: 155px;
     font-size: 12px;
     padding: 1px 4px;
-    height: 50px;
+    height: 100px;
 }
 div.input-container {
     position: absolute;
@@ -168,10 +170,10 @@ div.input-container input {
 
 <form action="ca.php" method="post" enctype="multipart/form-data" id="form">
 <div class='fancy-file'>
-    <div class='fancy-file-name'><img src="http://simpleicon.com/wp-content/uploads/camera.png" style="width:155px; height:50px;">></div>
+    <div class='fancy-file-name'><img src="http://icons.iconarchive.com/icons/pelfusion/long-shadow-media/512/Camera-icon.png" style="width:155px; height:100px;"></div>
     <div class='input-container'>    	
 	
-      <input name="fileToUpload" type="file" id="file" accept="image/*" capture="camera"> 
+      <input name="fileToUpload" type="file" id="file" accept="image/*" capture="camera" style="width:155px; height:100px;"> 
 </div>
 </div>
 
@@ -179,7 +181,7 @@ div.input-container input {
 <?php
 if ( isset($_SESSION["photo"]) ) {
 echo "<img src=".$_SESSION["photo"]." style='width:200px; height:200px;'>";
-echo "<h1>".$_SESSION["name"]."</h1>";
+echo "<h1 class='animated infinite bounce'>".$_SESSION["name"]."</h1>";
 echo "<h1>Calories: ".$_SESSION["calories"]."</h1>";
 
 } 
