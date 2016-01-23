@@ -9,16 +9,18 @@ body {
   overflow: hidden;
 }
 
-<<<<<<< HEAD
 .jumbotron{
 	background: url("grapes.jpg");
 	background-size: cover;
 	height: 100%;
 	width: 100%;
 	position: fixed;
+	-webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
 }
-=======
->>>>>>> 1394f1fb3de50d8d99e9612d3628021b299f0c8e
 
 .nav-container{
 	position: fixed;
