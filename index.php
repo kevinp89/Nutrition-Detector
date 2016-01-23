@@ -1,12 +1,21 @@
 <html>
 	<head>
-		
 		<title> Calorie Detector </title>
 		<link rel="stylesheet" type="text/css" href="main.css"> 
 		<link rel="stylesheet" type="text/css" href="normalize.css"> 
 		
 	</head>
 	<body>
+		<script src="jquery-1.12.0.js">
+		
+		<script src="jquery-1.12.0.min.js">
+	
+		<script>
+			$(document).ready(function() {
+				
+			});
+		</script>
+		
 		<div class="nav-container">
 			<nav>
 			<ul>
