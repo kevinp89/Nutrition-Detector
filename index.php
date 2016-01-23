@@ -1,7 +1,16 @@
-<script>
+<ul id="calories"><li>Calorie Detector!</li></ul>
+<script src="jquery-1.12.0.js" type=text/javascript>
 	$(document).ready(function() {
+		$(#calories).animateText([ 
+	{
+		offset: 0,
+		duration: 1000,
+		animation: "explode"
 		
-	});
+	}
+	]);
+		
+	})
 </script> 
 
 <html>
