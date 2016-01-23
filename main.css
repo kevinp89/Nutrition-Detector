@@ -6,8 +6,10 @@ body {
   font-family: 'Lato';
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  overflow: hidden;
 }
 
+<<<<<<< HEAD
 .jumbotron{
 	background: url("grapes.jpg");
 	background-size: cover;
@@ -15,6 +17,8 @@ body {
 	width: 100%;
 	position: fixed;
 }
+=======
+>>>>>>> 1394f1fb3de50d8d99e9612d3628021b299f0c8e
 
 .nav-container{
 	position: fixed;
@@ -22,8 +26,8 @@ body {
 	top: 0;
 	left: 0;
 	height: 100%;
-	width: 50px;
-	background: -webkit-linear-gradient(#ffffff 0%, #3ebdd8 100%);
+	width: 60px;
+	background: #202020;
 	transition: width ease .5s;
 	
 }
@@ -44,18 +48,7 @@ nav ul li{
 
 .panel {
   min-height: 100vh;
-  /*
-display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-<<<<<<< HEAD
   margin-left: 80px;
-
-=======
-*/
-  margin-left: 80px;
->>>>>>> 188570745ca9e9cd4c77d9a9a054c21b8c62c6c9
   overflow: hidden;
 }
 
