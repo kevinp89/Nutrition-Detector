@@ -13,7 +13,7 @@
 	
 		<script type="text/javascript">
 			$(document).ready(function() {
-				$("p").animate({height: "+=40px"}, 2000, "fadeInLeft");
+				
 			});
 		</script>
 		
