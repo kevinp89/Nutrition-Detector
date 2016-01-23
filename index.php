@@ -1,8 +1,11 @@
-<script>
+<link rel="stylesheet" href="bower_components/Morphext/dist/morphext.css">
+
+<script src="bower_components/Morphext/dist/morphext.min.js">
 	$(document).ready(function() {
 		
 	});
-</script> 
+	
+</script>
 
 <html>
 	<head>
@@ -16,7 +19,7 @@
 		<div class="nav-container">
 			<nav>
 			<ul>
-				<li><a href="#home"> Home </a></li>
+				<li><a href="index.php"> Home </a></li>
 				<li><a href="#1"> About Us </a></li>
 				<li><a href="#2"> Search </a></li>
 				<li><a href="#3"> News </a></li>
@@ -26,6 +29,7 @@
 			
 		</div>
 
+<<<<<<< HEAD
 <section class="panel b-blue" id="home">
    
 	    <div class="jumbotron">
@@ -41,6 +45,9 @@
 
 
 <section class="panel b-orange" id="1">
+=======
+<section class="panel b-blue" id="1">
+>>>>>>> 5c68428b97c07500ee4dbb9f7b7c7caf83facace
     <div class="panel__content">
       <h1 class="panel__headline" id="aboutUs">About Us</h1>
        	
@@ -103,13 +110,8 @@
   
     <div class="panel__content" id="about-content">
       <h1 class="panel__headline"><i class="fa fa-bolt"></i>&nbsp;Search</h1>
-      <div class="panel__block">
-	
-      </div>
-      <form id="searchbox" action="">
-		 	<input id="search" type="text" placeholder="Type here">
-		 	<input id="submit" type="submit" value="Search">
-			</form>
+      <div class="panel__block"></div>
+      
       
         </div>
   
