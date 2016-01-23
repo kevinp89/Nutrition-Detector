@@ -21,6 +21,17 @@
 		</div>
 
 <section class="panel b-blue" id="home">
+<<<<<<< HEAD
+   
+	    <div class="jumbotron">
+      <h1 class="panel__headline" id="aboutUs"><i class="fa fa-camera-retro"></i>Home</h1>
+      
+      
+      
+      
+	    </div>
+
+=======
     <div class="panel__content">
       <h1 class="panel__headline" id="aboutUs"><i class="fa fa-camera-retro"></i>About Us</h1>
        	<ul>
@@ -28,11 +39,18 @@
       
       
     </div>
+>>>>>>> 1394f1fb3de50d8d99e9612d3628021b299f0c8e
   </article>
 </section>
 
 
 <section class="panel b-orange" id="1">
+<<<<<<< HEAD
+=======
+<section class="panel b-blue" id="1">
+>>>>>>> 5c68428b97c07500ee4dbb9f7b7c7caf83facace
+=======
+>>>>>>> 1394f1fb3de50d8d99e9612d3628021b299f0c8e
     <div class="panel__content">
       <h1 class="panel__headline" id="aboutUs">About Us</h1>
        	
