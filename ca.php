@@ -128,8 +128,14 @@ header("location: res.php");
 <!DOCTYPE html>
 <html>
 <head>
+	<title>Calorie Detector!</title>
+	<link rel="stylesheet" type="text/css" href="animate.css">
 </head>
 <body>
+
+<script src="jquery-1.12.0.js"></script>
+
+<script src="jquery-1.12.0.min.js"></script>
 
 
 <form action="ca.php" method="post" enctype="multipart/form-data" style="display:inline-block;">
