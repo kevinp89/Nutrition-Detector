@@ -36,25 +36,33 @@ nav ul li{
 
 .panel {
   min-height: 100vh;
-  display: -webkit-box;
+  /*
+display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
   margin-left: 80px;
 
+=======
+*/
+  margin-left: 80px;
+>>>>>>> 188570745ca9e9cd4c77d9a9a054c21b8c62c6c9
   overflow: hidden;
 }
 
-.panel__content h1, ul{
-	text-align: left;
-	left: 0;
-	margin-left: 0;
+
+.panel__content div{
+	padding-right: 30px;
 }
 
-
-#1{
+.panel__content ul{
+	display: inline;
+	list-style: none;
+	padding-right: 20px;
 	left: 0;
-	margin-left: 0;
+	clear: both;
+	
 }
 #2 form{
 		width: 500 px;
@@ -76,14 +84,21 @@ nav ul li{
 }
 
 
-#about-content{
-	left: 0;
-	margin-left: 0;
+.panel__content ol{
+	list-style: none;
 }
 
-#aboutUs{
-	left: 0;
-	margin-left: 0;
-	text-align: left;
+#sr{
 	
+	clear: both;
+	float: left;
+}
+
+#ml{
+	clear: both;
+	float: left;
+}
+
+#nd{
+	margin-left: 100px;
 }
