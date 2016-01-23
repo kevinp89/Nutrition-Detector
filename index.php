@@ -13,11 +13,9 @@
 	
 		<script type="text/javascript">
 			$(document).ready(function() {
-				$("p").animate({height: "+=40px"}, 2000, "easeOutBounce");
+				$("p").animate({height: "+=40px"}, 2000, "fadeInLeft");
 			});
 		</script>
-		
-		<p>hahahaha</p>
 		
 		<div class="nav-container">
 			<nav>
