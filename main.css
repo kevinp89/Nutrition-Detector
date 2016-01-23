@@ -40,6 +40,7 @@ nav ul {
 	margin-left: 0;
 	margin-top: 10px;
 	padding: 10px;
+	overflow: hidden;
 }
 
 nav ul li{
@@ -59,6 +60,21 @@ nav ul li{
 	transition:  .2s ease-in-out;
     -moz-transition:  .2s ease-in-out;
     -webkit-transition:  .2s ease-in-out;
+}
+
+
+@media screen and (max-width: 580px){
+	nav ul li{
+		box-sizing: border-box;
+		width: 100%;
+		padding-top: 55px;
+	}
+	
+	.jumbotron{
+		background:url("grapes.jpg" ) no-repeat center center fixed;
+		background-size: cover;
+
+	}
 }
 
 .panel {
