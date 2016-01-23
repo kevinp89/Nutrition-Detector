@@ -7,10 +7,8 @@
 	</head>
 	<body>
 		<script src="jquery-1.12.0.js">
-		</script>
 		
 		<script src="jquery-1.12.0.min.js">
-		</script>
 	
 		<script>
 			$(document).ready(function() {
