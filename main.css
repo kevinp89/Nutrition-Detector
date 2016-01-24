@@ -54,7 +54,7 @@ nav ul li{
 }
 
 
-@media screen and (max-width: 580px){
+@media screen and (max-width: 760px){
 	nav ul li{
 		z-index: 90000;
 		box-sizing: border-box;
@@ -65,7 +65,15 @@ nav ul li{
 	.jumbotron{
 		background:url("grapes.jpg" ) no-repeat center center fixed;
 		background-size: cover;
-
+	}
+	
+	.b-orange{
+		overflow: scroll;
+	}
+	
+	.b-orange div{
+		position: relative;
+		display: table;
 	}
 }
 

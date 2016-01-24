@@ -30,7 +30,6 @@
 			
 		</div>
 
-<!---
 <section class="panel b-orange" id="1">
     <div class="panel__content">
       <h1 class="panel__headline" id="aboutUs">Contact Us</h1>
@@ -101,4 +100,3 @@
 	
 	
 </html>
--->
