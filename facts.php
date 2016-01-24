@@ -160,7 +160,7 @@
 	    <h2><strong> Did you know! </strong></h2>
 	    <ul>
 		    <li><p>If you exercise rather than going on a diet, you will lose weight faster! This is because going on a diet will make you look like a skeleton!</p></li>
-		    <li><p>Being 130lbs doesn't mean you are the weakest, in fact you might just have the highest relative strength in the gym! Just train hard, lift heavy and watch you eating habbits!!!</p></li>
+		    <li><p>Being 130lbs doesn't mean you are the weakest, in fact you might just have the highest relative strength in the gym! Just train hard, lift heavy and watch your eating habits!!!</p></li>
 	    </ul>
 	    	
 	    
