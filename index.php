@@ -109,20 +109,11 @@ for ($i=0; $i<sizeof($output["hits"]); $i++) {
 }
 $calories = round($sum / $count);
 
-/*
-$photo = $path; 
-$name = $output["hits"][0]["fields"]["item_name"]; 
-$calories = $output["hits"][0]["fields"]["nf_calories"];
-echo $photo.PHP_EOL;
-echo $name.PHP_EOL;
-echo $calories.PHP_EOL;
-*/
 curl_close ($ch);
 
 $_SESSION["photo"] = $path;
 $_SESSION["name"] = $name;
 $_SESSION["calories"] = round($sum / $count);
-//header("location: res.php");
 }
 ?>
 
@@ -234,11 +225,10 @@ div.input-container input {
 			<li><a title="Home" href="index.php"> <img height="40px" width="40px" src="simple-orange-house-md.png"></a></li>
 			<li><a title="Search for food facts" href="search.php"> <img height="40px" width="40px" src="search.png"> </a></li>
 			<li><a title="BMI and facts" href="facts.php"> <img height="40px" width="40px" src="BMI.png"> </a></li>
-<<<<<<< HEAD
-			<li><a title="Contact Us" href="aboutUs.php"> <img height="40px" width="40px" src="fruit-hoot.jpg"> </a></li>		
-=======
+
+				
+
 			<li><a title="Contact Us" href="aboutUs.php"> <img height="40px" width="40px" src="aboutUs.png"> </a></li>		
->>>>>>> d8d365e7dfa7cf1e90fe7a02268f9a1c714a1b47
 		</ul>
 	</nav>			
 </div>
@@ -263,25 +253,30 @@ div.input-container input {
 		
 		<div>
 			<?php
-				if ( isset($_SESSION["photo"]) ) { ?>
+				if ( isset($_SESSION["photo"]) ) {
+				 ?>
 					<div class="modal hide fade" id="myModal">
 						<div class="modal-header">
-							<a class="close" data-dismiss="modal">×</a>
+							<a class="close" data-dismiss="modal"></a>
 								<h3>Success</h3>
 						</div>
 						<div class="modal-body">
 							<?php
 								echo "<img src=".$_SESSION["photo"]." style='width:200px; height:200px;'>";
 								echo "<h1 class='animated fadeInDown'>".$_SESSION["name"]."</h1>";
-								echo "<h1 class='animated zoomInRight'>Calories: ".$_SESSION["calories"]."</h1>"; ?>
+								echo "<h1 class='animated zoomInRight'>Calories: ".$_SESSION["calories"]."</h1>"; 
+							?>
 							
 						</div>
 						<div class="modal-footer">
 							<a class="close btn" data-dismiss="modal">Close</a>
-    					</div>
+    						</div>
 					</div>
 					
-			<?php}?> 
+				<?php
+				}
+
+			?> 
 					
 		</div>
 </div>
@@ -289,11 +284,7 @@ div.input-container input {
 
 
 <script type="text/javascript">
-		$(window).load(function () {
-			$('#myModal').modal('show');
-		});
-					</script>
-
+		
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>		
 <script src="index.js"></script>
 <script>
@@ -311,15 +302,10 @@ $('div.fancy-file input:file').bind('change blur', function() {
 });
 }
 
-/*
-function popOpen(){
-$para = document.getElementsById("pop").innerHTML;
-
-
-if($para.length > 0){
-	document.getElementsByClassName("modalDialog").style.opacity=1;
-}}
-*/
+$(window).load(function () {
+			$('#myModal').modal('show');
+});
 </script>
+
 </body>
 </html>
