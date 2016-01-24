@@ -135,6 +135,7 @@ nav ul li{
 	.fancy-file-name{
 		height:960px;
 		width: 640px;
+		background-size: inherit;
 	}
 	
 	nav ul li{
