@@ -21,16 +21,15 @@
 			<nav>
 			<ul>
 				<li><a title="Home" href="index.php"> <img height="40px" width="40px" src="simple-orange-house-md.png"></a></li>
-				<li><a href="search.php"> <img height="40px" width="40px" src="search.png"> </a></li>
-				<li><a href="facts.php"> <img height="40px" width="40px" src="BMI.png"> </a></li>
-				<li><a href="aboutUs.php"> <img height="40px" width="40px" src="aboutUs.png"> </a></li>
+				<li><a title="Search" href="search.php"> <img height="40px" width="40px" src="search.png"> </a></li>
+				<li><a title="BMI & Facts" href="facts.php"> <img height="40px" width="40px" src="BMI.png"> </a></li>
+				<li><a title="About Us" href="aboutUs.php"> <img height="40px" width="40px" src="aboutUs.png"> </a></li>
 				
 			</ul>
 			</nav>
 			
 		</div>
 
-<!---
 <section class="panel b-orange" id="1">
     <div class="panel__content">
       <h1 class="panel__headline" id="aboutUs">Contact Us</h1>
@@ -86,12 +85,6 @@
     </div>
   </article>
 </section>
-
-
-
-			
-			
-		</div>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js">
 		
 		<script src="index.js"></script>
@@ -101,4 +94,3 @@
 	
 	
 </html>
--->

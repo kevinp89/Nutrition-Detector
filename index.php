@@ -36,8 +36,8 @@ if ($uploadOk == 0) {
     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {  
         //echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
 	
-        //$path =  "http://52.90.192.92/images/".basename( $_FILES["fileToUpload"]["name"]);
-	$path = "https://sprayitaway.com/wp-content/uploads/2013/08/apple_by_grv422-d5554a4.jpg";
+        $path =  "http://52.90.192.92/images/".basename( $_FILES["fileToUpload"]["name"]);
+	//$path = "https://sprayitaway.com/wp-content/uploads/2013/08/apple_by_grv422-d5554a4.jpg";
 	//echo $path;
 	run($path);
     } else {
@@ -101,28 +101,41 @@ $output = json_decode($output, true);
 
 $sum = 0;
 $count = 0;
+$item = array();
 for ($i=0; $i<sizeof($output["hits"]); $i++) {
-	//echo $output["hits"][$i]["fields"]["item_name"] . PHP_EOL;
-	//echo $output["hits"][$i]["fields"]["nf_calories"] . PHP_EOL;
-	$sum = $sum + $output["hits"][$i]["fields"]["nf_calories"];
-	$count = $count + 1;
+	if ($output["hits"][$i]["fields"]["nf_calories"] != 0) {
+		array_push($item, $output["hits"][$i]["fields"]["item_name"]);
+		array_push($item, $output["hits"][$i]["fields"]["nf_calories"]);
+		$sum = $sum + $output["hits"][$i]["fields"]["nf_calories"];
+		$count = $count + 1;
+	}
 }
 $calories = round($sum / $count);
 
-/*
-$photo = $path; 
-$name = $output["hits"][0]["fields"]["item_name"]; 
-$calories = $output["hits"][0]["fields"]["nf_calories"];
-echo $photo.PHP_EOL;
-echo $name.PHP_EOL;
-echo $calories.PHP_EOL;
-*/
 curl_close ($ch);
 
+$_SESSION["item"] = $item;
 $_SESSION["photo"] = $path;
 $_SESSION["name"] = $name;
 $_SESSION["calories"] = round($sum / $count);
-//header("location: res.php");
+
+// If there is a name match
+/* 
+$name_p = explode(" ", $name);
+for ($i=0; $i<sizeof($item); $i=$i+2) {
+        $item_p = explode(" ", $item[$i]);
+	for ($j=0; $j<sizeof($item_p); $j++) {
+		for ($k=0; $k<sizeof($name_p); $k++) {
+			//if ($item_p[$j] == $name_p[$k]) {
+			if (strcasecmp($item_p[$j], $name_p[$k]) == 0) {
+				$_SESSION["calories"] = $item[$i+1];
+				break;
+			}
+		}
+	} 
+}
+*/
+
 }
 ?>
 
@@ -145,41 +158,58 @@ div.fancy-file {
 }
 
 div.fancy-file-name {
-	position: relative;
+	background: url("https://cdn.vectorstock.com/i/composite/84,61/beautiful-abstract-background-vector-928461.jpg");
+	background-size: cover;
     float: left;
     border-radius: 3px;
     background-color: #fff;
-    box-shadow:
+    /*
+box-shadow:
         inset 1px 1px 3px #eee,
         inset -1px -1px 3px #888,
         1px 1px 3px #222;
+*/
     font-weight: bold;
     font-family: Courier New, fixed;
-    background: url('grapes.jpg');
-    background-size: cover;
-    height: 720px;
     width: 100%;
     font-size: 12px;
     padding: 1px 4px;
-
-    
+    height: 750px;
 }
-.upload_button{
-	margin:auto;
-	position: absolute;
-	text-align: center;
-	float: center;
-	top: 0;
-	bottom: 0; left:0; right:0;
 
+.upload_button{
+	position: absolute;
+	border-radius: 50%;
+	margin-left: 130px;
+	margin-top: 200px;
+	top:0; bottom: 0; left: 0; right:0;
+	text-align: center; float: center;
+	height: 300px;
+	width: 300px;
+	background: #7edc13;
 }
 
 div.input-container {
+
+	float: center;
+	text-align: center;
+	margin: auto;
     position: absolute;
-    top: 0; left: 0;
+    top: 0; left: 0;bottom:0; right: 0;
 }
 
 div.input-container input {
+	z-index: 1000000;
+	position: inherit;
+	border-radius: 50%;
+	background: aqua;
+	margin-top: 200px;
+	margin-left: 130px;
+	text-align: center;
+	float: center;
+	top:0; bottom: 0; left: 0; right: 0;
+	width: 300px;
+	height: 300px;
     opacity: 0;
 }
 </style>
@@ -190,37 +220,42 @@ div.input-container input {
 <div class="nav-container">
 	<nav>
 		<ul>
-			<li><a title="Home" href="index.php"> <img height="40px" width="40px" src="simple-orange-house-md.png"></a></li>
-			<li><a title="Search for food facts" href="search.php"> <img height="40px" width="40px" src="search.png"> </a></li>
-			<li><a title="BMI and facts" href="facts.php"> <img height="40px" width="40px" src="BMI.png"> </a></li>
-			<li><a title="Contact Us" href="aboutUs.php"> <img height="40px" width="40px" src="aboutUs.png"> </a></li>		
+			<li><a title="Home" href="index.php"> <img height="40px" width="40px" src="simple-orange-house-md.png"> </a></li>
+			<li><a title="Search" href="search.php"> <img height="40px" width="40px" src="search.png"> </a></li>
+			<li><a title="BMI & Facts" href="facts.php"> <img height="40px" width="40px" src="facts.png"> </a></li>
+			<li><a title="About us" href="aboutUs.php"> <img height="40px" width="40px" src="aboutUs.png"> </a></li>		
 		</ul>
 	</nav>			
 </div>
 
-<section class="panel b-blue" id="home">
-
+<!-- <section class="panel b-blue" id="home"> -->
 <form action="index.php" method="post" enctype="multipart/form-data" id="form">
 <div class='fancy-file'>
     <div class='fancy-file-name'>
-	    <button class="upload_button" style="width:210px; height:210px";>Upload</button></div>
+	    <div class="backCircle"></div>
+    	<button class="upload_button"><a>Upload Photo</a><img src="upload.png"></button></div>
     <div class='input-container'>    	
 	
-      <input name="fileToUpload" type="file" id="file" accept="image/*" capture="camera" style="width:100%; height:210px;"> 
-</div>
-</div>
+      <input name="fileToUpload" type="file" id="file" accept="image/*" capture="camera">
 
-</form>
+<div class="output">
 <?php
+
 if ( isset($_SESSION["photo"]) ) {
-echo "<img src=".$_SESSION["photo"]." style='width:200px; height:200px;'>";
-echo "<h1 class='animated fadeInDown'>".$_SESSION["name"]."</h1>";
-echo "<h1 class='animated zoomInRight'>Calories: ".$_SESSION["calories"]."</h1>";
-
-} 
-?>
-
+	echo "<img src=".$_SESSION["photo"]." style='width:200px; height:200px;'>";
+	echo "<h1 class='animated fadeInDown'>".$_SESSION["name"]."</h1>";
+	echo "<h1 class='animated zoomInRight'>Calories: ".$_SESSION["calories"]."</h1>";
+	
+	for ($i=0; $i<sizeof($_SESSION["item"]); $i=$i+2) {
+		echo "<h2>".$_SESSION["item"][$i]." has ".$_SESSION["item"][$i+1]." Calories"."</h2>";
+	}	
+}
+?></div>
+</div></div>
+</form>
+<!--
 </section>
+
 
 <section class="panel b-orange" id="1">
     <div class="panel__content">
@@ -279,8 +314,9 @@ echo "<h1 class='animated zoomInRight'>Calories: ".$_SESSION["calories"]."</h1>"
     </div>
   </article>
 </section>
+-->
 
-
+<!--
 <div class="search">
 <section class="panel b-yellow" id="2">
   
@@ -310,7 +346,7 @@ echo "<h1 class='animated zoomInRight'>Calories: ".$_SESSION["calories"]."</h1>"
 			
 			
 		</div>
-
+-->
 
 
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>		
@@ -329,23 +365,8 @@ $('div.fancy-file input:file').bind('change blur', function() {
     $inp.closest('.fancy-file').find('.fancy-file-name').text(fn);
 });
 }
+
 </script>
 </body>
 </html>
 
-<html>
-	<head>
-		
-		
-	</head>
-	<body>
-				
-		
-
-
-				
-		
-	</body>
-	
-	
-</html>

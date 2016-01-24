@@ -1,0 +1,23 @@
+
+<htmL>
+	<body>
+		<div id="container" style="width:100%; height:5px; border:1px solid black;">
+		<div id="progress-bar" style="width:10%;background-color: green; height:5px;"></div>
+		</div>
+
+<script>
+  var width = 0;
+  window.onload = function(e){ 
+    setInterval(function () {
+        width = width >= 100 ? 0 : width+5;  
+        document.getElementById('progress-bar').style.width = width + '%'; }, 200);            
+  }
+</script>
+	</body>
+</htmL>
+
+
+	
+
+
+	
