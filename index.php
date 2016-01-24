@@ -300,16 +300,6 @@ if ( isset($_SESSION["photo"]) ) {
 	      		<li>University Of Toronto (year 2)</li></ol>
 	      		
 	      	</ul></div>
-	      
-	      <div id="kp">
-	      <ul >
-	      	<li>Kevin Patel</li>
-	      		<ol>
-	      		<li>Email: <a href="#">kp.patel@mail.utoronto.ca</a></li>
-	      		<li>Phone: (905)-463-1366</a></li>
-	      		<li>University Of Toronto (year 2)</li></ol>
-	      		
-	      	</ul></div>
 
     </div>
   </article>
