@@ -36,7 +36,8 @@ if ($uploadOk == 0) {
     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {  
         //echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
 	
-        $path =  "http://52.90.192.92/images/".basename( $_FILES["fileToUpload"]["name"]);
+        //$path =  "http://52.90.192.92/images/".basename( $_FILES["fileToUpload"]["name"]);
+	$path = "https://sprayitaway.com/wp-content/uploads/2013/08/apple_by_grv422-d5554a4.jpg";
 	//echo $path;
 	run($path);
     } else {
@@ -128,6 +129,11 @@ $_SESSION["calories"] = round($sum / $count);
 <!DOCTYPE html>
 <html>
 <head>
+<title> Calorie Detector </title>
+
+<link rel="stylesheet" href="animate.css/animate.min.css">
+<link rel="stylesheet" type="text/css" href="main.css"> 
+<link rel="stylesheet" type="text/css" href="normalize.css"> 
 <style>
 input[type='file'] {
   color: transparent;
@@ -139,6 +145,7 @@ div.fancy-file {
 }
 
 div.fancy-file-name {
+	position: relative;
     float: left;
     border-radius: 3px;
     background-color: #fff;
@@ -148,11 +155,25 @@ div.fancy-file-name {
         1px 1px 3px #222;
     font-weight: bold;
     font-family: Courier New, fixed;
-    width: 155px;
+    background: url('grapes.jpg');
+    background-size: cover;
+    height: 720px;
+    width: 100%;
     font-size: 12px;
     padding: 1px 4px;
-    height: 50px;
+
+    
 }
+.upload_button{
+	margin:auto;
+	position: absolute;
+	text-align: center;
+	float: center;
+	top: 0;
+	bottom: 0; left:0; right:0;
+
+}
+
 div.input-container {
     position: absolute;
     top: 0; left: 0;
@@ -162,16 +183,30 @@ div.input-container input {
     opacity: 0;
 }
 </style>
+
 </head>
+
 <body>
+<div class="nav-container">
+	<nav>
+		<ul>
+			<li><a title="Home" href="index.php"> <img height="40px" width="40px" src="simple-orange-house-md.png"></a></li>
+			<li><a title="Search for food facts" href="search.php"> <img height="40px" width="40px" src="search.png"> </a></li>
+			<li><a title="BMI and facts" href="facts.php"> <img height="40px" width="40px" src="BMI.png"> </a></li>
+			<li><a title="Contact Us" href="aboutUs.php"> <img height="40px" width="40px" src="aboutUs.png"> </a></li>		
+		</ul>
+	</nav>			
+</div>
 
+<section class="panel b-blue" id="home">
 
-<form action="ca.php" method="post" enctype="multipart/form-data" id="form">
+<form action="index.php" method="post" enctype="multipart/form-data" id="form">
 <div class='fancy-file'>
-    <div class='fancy-file-name'><img src="http://simpleicon.com/wp-content/uploads/camera.png" style="width:155px; height:50px;">></div>
+    <div class='fancy-file-name'>
+	    <button class="upload_button" style="width:210px; height:210px";>Upload</button></div>
     <div class='input-container'>    	
 	
-      <input name="fileToUpload" type="file" id="file" accept="image/*" capture="camera"> 
+      <input name="fileToUpload" type="file" id="file" accept="image/*" capture="camera" style="width:100%; height:210px;"> 
 </div>
 </div>
 
@@ -179,11 +214,107 @@ div.input-container input {
 <?php
 if ( isset($_SESSION["photo"]) ) {
 echo "<img src=".$_SESSION["photo"]." style='width:200px; height:200px;'>";
-echo "<h1>".$_SESSION["name"]."</h1>";
-echo "<h1>Calories: ".$_SESSION["calories"]."</h1>";
+echo "<h1 class='animated fadeInDown'>".$_SESSION["name"]."</h1>";
+echo "<h1 class='animated zoomInRight'>Calories: ".$_SESSION["calories"]."</h1>";
 
 } 
 ?>
+
+</section>
+
+<section class="panel b-orange" id="1">
+    <div class="panel__content">
+      	<h1 class="panel__headline" id="aboutUs">Contact Us</h1>
+       	
+       	<div id="sr">
+	      	<ul >
+	      	<li>Seungmoon Rieh</li>
+	      		<ol>
+	      		<li>Email: <a href="#">seungmoon.rieh@mail.utoronto.ca</a></li>
+	      		<li>Phone: (647)-876-0888</li>
+	      		<li>EngSci Grad 2015</li>
+			</ol>
+	      	</ul>
+	</div>
+	      
+	      
+	      <div id="ml">
+	      <ul >
+	      	<li>Michael Liu</li>
+	      		<ol>
+	      		<li>Email: <a href="#">michaelzb.liu@mail.utoronto.ca</a></li>
+	      		<li>Phone: (416)-576-7101</a></li>
+	      		<li>University Of Toronto (year 1)</li></ol>
+	      </ul></div>
+	            
+	     <div id="nd">  
+	     <ul >
+	      	<li>Nikita Dua</li>
+	      		<ol>
+	      		<li>Email: <a href="#">nikita.dua@mail.utoronto.ca</a></li>
+	      		<li>Phone: (647)-979-3634</a></li>
+	      		<li>University Of Toronto (year 2)</li></ol>
+	      	</ul></div>
+	      
+	      <div id="mi">
+	      <ul >
+	      	<li>Monica Iqbal</li>
+	      		<ol>
+	      		<li>Email: <a href="#">monica.iqbal@mail.utoronto.ca</a></li>
+	      		<li>Phone: (647)-830-4256</a></li>
+	      		<li>University Of Toronto (year 2)</li></ol>
+	      		
+	      	</ul></div>
+	      
+	      <div id="kp">
+	      <ul >
+	      	<li>Kevin Patel</li>
+	      		<ol>
+	      		<li>Email: <a href="#">kp.patel@mail.utoronto.ca</a></li>
+	      		<li>Phone: (905)-463-1366</a></li>
+	      		<li>University Of Toronto (year 2)</li></ol>
+	      		
+	      	</ul></div>
+
+    </div>
+  </article>
+</section>
+
+
+<div class="search">
+<section class="panel b-yellow" id="2">
+  
+    <div class="panel__content" id="about-content">
+      <h1 class="panel__headline"><i class="fa fa-bolt"></i>&nbsp;Search</h1>
+      <div class="panel__block"></div>
+      
+      
+        </div>
+</section></div>
+
+  
+  
+  
+</section>
+
+<section class="panel b-red" id="3">
+  <article class="panel__wrapper">
+    <div class="panel__content">
+      <h1 class="panel__headline"><i class="fa fa-music"></i>&nbsp;Facts</h1>
+      <div class="panel__block"></div>
+      <p>Beard sriracha kitsch literally, taxidermy normcore aesthetic wayfarers salvia keffiyeh farm-to-table sartorial gluten-free mlkshk. Selvage normcore 3 wolf moon, umami Kickstarter artisan meggings cardigan drinking vinegar bicycle rights.</p>
+    </div>
+  </article>
+</section>
+
+			
+			
+		</div>
+
+
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>		
+<script src="index.js"></script>
 <script>
 document.getElementById("file").onchange = function() {
 document.getElementById("form").submit();
@@ -202,3 +333,19 @@ $('div.fancy-file input:file').bind('change blur', function() {
 </body>
 </html>
 
+<html>
+	<head>
+		
+		
+	</head>
+	<body>
+				
+		
+
+
+				
+		
+	</body>
+	
+	
+</html>

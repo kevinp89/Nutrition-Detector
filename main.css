@@ -9,17 +9,6 @@ body {
   overflow: hidden;
 }
 
-.jumbotron{
-	position: relative;
-	float: left;
-	top: 0;
-	margin-left: 0;
-	height: 100%;
-	width: 100%;
-    float: left;
-    background:url("grapes.jpg" );
-	background-size: cover;
-}
 
 
 
@@ -65,7 +54,7 @@ nav ul li{
 }
 
 
-@media screen and (max-width: 580px){
+@media screen and (max-width: 760px){
 	nav ul li{
 		z-index: 90000;
 		box-sizing: border-box;
@@ -76,7 +65,15 @@ nav ul li{
 	.jumbotron{
 		background:url("grapes.jpg" ) no-repeat center center fixed;
 		background-size: cover;
-
+	}
+	
+	.b-orange{
+		overflow: scroll;
+	}
+	
+	.b-orange div{
+		position: relative;
+		display: table;
 	}
 }
 
@@ -120,8 +117,22 @@ nav ul li{
 	text-align:center;
 	float: center;
     padding-left: 15px;
-	}
-   
+}
+
+
+.backCircle{
+	margin: auto;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	float: center;
+	text-align: center;
+	height: 300px;
+	width: 300px;
+	border-radius: 50%;
+	background-color: rgba(228,    238,    49, 0.51);
 }
 
 .b-red{
@@ -138,6 +149,17 @@ nav ul li{
 		width: 500 px;
 		margin: 50px auto;
 	}
+	
+.b-red{
+	padding-left: 6px;
+	background: url('factsImage.jpg');
+	background-size: cover;
+}
+
+.b-red h3, label, #bmi{
+	color: #f0eded;
+	font-size: 20;
+}
 	
 #search{
 	padding:8px 20px;
@@ -173,6 +195,7 @@ nav ul li{
 #nd{
 	margin-left: 100px;
 }
+
 progress{
 	display:inline-block;
 	width: 190px;
@@ -215,4 +238,26 @@ progress:after{
 	content: attr(value) '%';
 }
 
+
+.moreFacts{
+	margin-left: 10px;
+	width: 500px;
+}
+
+.moreFacts ul {
+	list-style: hiragana;
 	
+}
+
+.moreFacts h2:hover, li:hover{
+	-webkit-transform: scale(1.1, 1.1);
+    -moz-transform: scale(1.1, 1.1);
+    -ms-transform: scale(1.1, 1.1);
+    -o-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+    
+    transition:  .2s ease-in-out;
+    -moz-transition:  .2s ease-in-out;
+    -webkit-transition:  .2s ease-in-out;
+}
+
