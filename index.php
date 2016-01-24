@@ -165,14 +165,27 @@ div.fancy-file-name {
     
 }
 .upload_button{
-	margin:auto;
-	position: absolute;
-	text-align: center;
+	
+	margin: auto;
+    left:0; right:0;
+    top:0; bottom:0;
+    position: absolute;
+    width: 210px;
+    height: 210px;
+	border: 2px solid;
+	border-radius: 100px;
+	background-color:#e2ec31;
+	text-align:center;
 	float: center;
-	top: 0;
-	bottom: 0; left:0; right:0;
+    padding-left: 15px;
 
 }
+
+.upload_button img:hover{
+	height: 300px;
+	width: 300px;
+}
+
 
 div.input-container {
     position: absolute;
@@ -183,18 +196,32 @@ div.input-container {
     margin-left: auto;
     margin-top: auto; 
    
-    
 }
+
+
 
 div.input-container input {
     opacity: 0; 
     top: 0; bottom: 0; right:0; left: 0;
+    margin-bottom: 500px;
     text-align: center;
     margin:auto;
     float: center;
     position: absolute;
-    
-    
+}
+
+.PopUp{
+	z-index: 1000000;
+	top: 0; bottom: 0;
+	left: 0;
+	right:0;
+	clear:both;
+	float: center;
+	text-align:center;
+	margin: auto;
+	background: aqua;
+	margin-bottom: 500px;
+	
 }
 </style>
 
@@ -212,126 +239,56 @@ div.input-container input {
 	</nav>			
 </div>
 
-<section class="panel b-blue" id="home">
+
 
 <form action="index.php" method="post" enctype="multipart/form-data" id="form">
 <div class='fancy-file'>
-    <div class='fancy-file-name'><a href="#pop">
-	    <button class="upload_button" style="width:210px; height:210px";><img src="upload.png" height="120px" width="120px"></button></a></div>
-    <div class='input-container'>    	
+    <div class='fancy-file-name'>
+	    <div class="backCircle"></div>
+	    <button class="upload_button"><img src="upload.png" height="120px" width="120px"></button>
+	</div>
+	
+    <div class='input-container'> 
 	
       <input name="fileToUpload" type="file" id="file" accept="image/*" capture="camera" style="width:220px; height:220px;"> 
-</div>
+    </div>
+      
+      <a href="#openModal">Open Modal</a>
+
+	<!-- <div id="openModal" class="modalDialog"> -->
+		
+		<div>
+			<?php
+				if ( isset($_SESSION["photo"]) ) { ?>
+					<div class="modal hide fade" id="myModal">
+						<div class="modal-header">
+							<a class="close" data-dismiss="modal">×</a>
+								<h3>Success</h3>
+						</div>
+						<div class="modal-body">
+							<?php
+								echo "<img src=".$_SESSION["photo"]." style='width:200px; height:200px;'>";
+								echo "<h1 class='animated fadeInDown'>".$_SESSION["name"]."</h1>";
+								echo "<h1 class='animated zoomInRight'>Calories: ".$_SESSION["calories"]."</h1>"; ?>
+							
+						</div>
+						<div class="modal-footer">
+							<a class="close btn" data-dismiss="modal">Close</a>
+    					</div>
+					</div>
+					
+			<?php}?> 
+					
+		</div>
 </div>
 </form>
 
-<a href="#x" class="overlay" id="pop"></a>
-<div class="popup">
-	<p>
-<?php
-if ( isset($_SESSION["photo"]) ) {
-echo "<img src=".$_SESSION["photo"]." style='width:200px; height:200px;'>";
-echo "<h1 class='animated fadeInDown'>".$_SESSION["name"]."</h1>";
-echo "<h1 class='animated zoomInRight'>Calories: ".$_SESSION["calories"]."</h1>";
 
-} 
-?></p></div>
-
-<a class="close" href="#close"></a>
-
-
-</section>
-
-<section class="panel b-orange" id="1">
-    <div class="panel__content">
-      	<h1 class="panel__headline" id="aboutUs">Contact Us</h1>
-       	
-       	<div id="sr">
-	      	<ul >
-	      	<li>Seungmoon Rieh</li>
-	      		<ol>
-	      		<li>Email: <a href="#">seungmoon.rieh@mail.utoronto.ca</a></li>
-	      		<li>Phone: (647)-876-0888</li>
-	      		<li>EngSci Grad 2015</li>
-			</ol>
-	      	</ul>
-	</div>
-	      
-	      
-	      <div id="ml">
-	      <ul >
-	      	<li>Michael Liu</li>
-	      		<ol>
-	      		<li>Email: <a href="#">michaelzb.liu@mail.utoronto.ca</a></li>
-	      		<li>Phone: (416)-576-7101</a></li>
-	      		<li>University Of Toronto (year 1)</li></ol>
-	      </ul></div>
-	            
-	     <div id="nd">  
-	     <ul >
-	      	<li>Nikita Dua</li>
-	      		<ol>
-	      		<li>Email: <a href="#">nikita.dua@mail.utoronto.ca</a></li>
-	      		<li>Phone: (647)-979-3634</a></li>
-	      		<li>University Of Toronto (year 2)</li></ol>
-	      	</ul></div>
-	      
-	      <div id="mi">
-	      <ul >
-	      	<li>Monica Iqbal</li>
-	      		<ol>
-	      		<li>Email: <a href="#">monica.iqbal@mail.utoronto.ca</a></li>
-	      		<li>Phone: (647)-830-4256</a></li>
-	      		<li>University Of Toronto (year 2)</li></ol>
-	      		
-	      	</ul></div>
-	      
-	      <div id="kp">
-	      <ul >
-	      	<li>Kevin Patel</li>
-	      		<ol>
-	      		<li>Email: <a href="#">kp.patel@mail.utoronto.ca</a></li>
-	      		<li>Phone: (905)-463-1366</a></li>
-	      		<li>University Of Toronto (year 2)</li></ol>
-	      		
-	      	</ul></div>
-
-    </div>
-  </article>
-</section>
-
-
-<div class="search">
-<section class="panel b-yellow" id="2">
-  
-    <div class="panel__content" id="about-content">
-      <h1 class="panel__headline"><i class="fa fa-bolt"></i>&nbsp;Search</h1>
-      <div class="panel__block"></div>
-      
-      
-        </div>
-</section></div>
-
-  
-  
-  
-</section>
-
-<section class="panel b-red" id="3">
-  <article class="panel__wrapper">
-    <div class="panel__content">
-      <h1 class="panel__headline"><i class="fa fa-music"></i>&nbsp;Facts</h1>
-      <div class="panel__block"></div>
-      <p>Beard sriracha kitsch literally, taxidermy normcore aesthetic wayfarers salvia keffiyeh farm-to-table sartorial gluten-free mlkshk. Selvage normcore 3 wolf moon, umami Kickstarter artisan meggings cardigan drinking vinegar bicycle rights.</p>
-    </div>
-  </article>
-</section>
-
-			
-			
-		</div>
-
-
+<script type="text/javascript">
+		$(window).load(function () {
+			$('#myModal').modal('show');
+		});
+					</script>
 
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>		
 <script src="index.js"></script>
@@ -349,23 +306,16 @@ $('div.fancy-file input:file').bind('change blur', function() {
     $inp.closest('.fancy-file').find('.fancy-file-name').text(fn);
 });
 }
+
+/*
+function popOpen(){
+$para = document.getElementsById("pop").innerHTML;
+
+
+if($para.length > 0){
+	document.getElementsByClassName("modalDialog").style.opacity=1;
+}}
+*/
 </script>
 </body>
-</html>
-
-<html>
-	<head>
-		
-		
-	</head>
-	<body>
-				
-		
-
-
-				
-		
-	</body>
-	
-	
 </html>
