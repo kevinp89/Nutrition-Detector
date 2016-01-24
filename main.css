@@ -9,17 +9,6 @@ body {
   overflow: hidden;
 }
 
-.jumbotron{
-	position: relative;
-	float: left;
-	top: 0;
-	margin-left: 0;
-	height: 100%;
-	width: 100%;
-    float: left;
-    background:url("grapes.jpg" );
-	background-size: cover;
-}
 
 
 
