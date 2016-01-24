@@ -30,7 +30,7 @@
 			
 		</div>
   
-</section>
+
 
 <section class="panel b-red" id="3">
   <article class="panel__wrapper">
