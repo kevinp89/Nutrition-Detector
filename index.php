@@ -205,7 +205,7 @@ div.input-container input {
 if ( isset($_SESSION["photo"]) ) {
 echo "<img src=".$_SESSION["photo"]." style='width:200px; height:200px;'>";
 echo "<h1 class='animated infinite bounce'>".$_SESSION["name"]."</h1>";
-echo "<h1>Calories: ".$_SESSION["calories"]."</h1>";
+echo "<h1 class='animated zoomIn'>Calories: ".$_SESSION["calories"]."</h1>";
 
 } 
 ?>
@@ -320,22 +320,3 @@ $('div.fancy-file input:file').bind('change blur', function() {
 });
 }
 </script>
-</body>
-</html>
-
-<html>
-	<head>
-		
-		
-	</head>
-	<body>
-				
-		
-
-
-				
-		
-	</body>
-	
-	
-</html>
