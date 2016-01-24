@@ -113,6 +113,13 @@ nav ul li{
 
 
 @media screen and (max-width: 760px){
+	
+	body{
+		height: 960px;
+		width: 640;
+		overflow: hidden;
+	}
+	
 	nav ul li{
 		z-index: 90000;
 		box-sizing: border-box;
@@ -120,9 +127,23 @@ nav ul li{
 		padding-top: 55px;
 	}
 	
+	.upload_button{
+		position: absolute;
+		border-radius: 50%;
+		margin: auto;
+		top:0; bottom: 0; left: 0; right:0;
+		text-align: center; float: center;
+		height: 100px;
+		width: 100px;
+		background: #7edc13;
+	
+	}
+	
 	.jumbotron{
 		background:url("grapes.jpg" ) no-repeat center center fixed;
 		background-size: cover;
+		height: 960;
+		width: 540;
 	}
 	
 	.b-orange{
