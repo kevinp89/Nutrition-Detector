@@ -176,20 +176,24 @@ div.fancy-file-name {
 
 div.input-container {
     position: absolute;
-    top: 0; left: 0;
-    bottom: 0; right: 0;
-    margin: auto;
-	float: center;
-	text-align: center;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right:0;
+    margin-left: auto;
+    margin-top: auto; 
+   
     
 }
 
 div.input-container input {
     opacity: 0; 
-    margin-left: 47%;
-    margin-top: 28%; 
-    height: 100px;
-    width: 100px;
+    top: 0; bottom: 0; right:0; left: 0;
+    text-align: center;
+    margin:auto;
+    float: center;
+    position: absolute;
+    
     
 }
 </style>
@@ -216,30 +220,14 @@ div.input-container input {
 	    <button class="upload_button" style="width:210px; height:210px";><img src="upload.png" height="120px" width="120px"></button></a></div>
     <div class='input-container'>    	
 	
-      <input name="fileToUpload" type="file" id="file" accept="image/*" capture="camera" style="width:100%; height:210px;"> 
+      <input name="fileToUpload" type="file" id="file" accept="image/*" capture="camera" style="width:220px; height:220px;"> 
 </div>
 </div>
 </form>
 
 <a href="#x" class="overlay" id="pop"></a>
 <div class="popup">
-	<h2>LogIn</h2>
-    <p>Please Enter your details here</p>
-    <div>
-	    <form method="post">
-        <label for="username">Username</label>
-        <input type="text" name="username" value="" placeholder="Enter Username"></form>
-    </div>
-    <div>
-	    <form method="post">
-        <label for="password">Password</label>
-        <input type="text" name="password" value="" placeholder="Enter Password"></form>
-    </div>
-    <input type="submit" value="LogIn" id="login_button"><a class="close" href="#close"></a>
-</div>
-
-<a class="close" href="#close"></a>
-
+	<p>
 <?php
 if ( isset($_SESSION["photo"]) ) {
 echo "<img src=".$_SESSION["photo"]." style='width:200px; height:200px;'>";
@@ -247,7 +235,10 @@ echo "<h1 class='animated fadeInDown'>".$_SESSION["name"]."</h1>";
 echo "<h1 class='animated zoomInRight'>Calories: ".$_SESSION["calories"]."</h1>";
 
 } 
-?>
+?></p></div>
+
+<a class="close" href="#close"></a>
+
 
 </section>
 
