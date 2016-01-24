@@ -177,10 +177,20 @@ div.fancy-file-name {
 div.input-container {
     position: absolute;
     top: 0; left: 0;
+    bottom: 0; right: 0;
+    margin: auto;
+	float: center;
+	text-align: center;
+    
 }
 
 div.input-container input {
-    opacity: 0;
+    opacity: 0; 
+    margin-left: 47%;
+    margin-top: 28%; 
+    height: 100px;
+    width: 100px;
+    
 }
 </style>
 
@@ -208,15 +218,34 @@ div.input-container input {
 <form action="index.php" method="post" enctype="multipart/form-data" id="form">
 < progress id ="progress" max="100" value="77"></progress>
 <div class='fancy-file'>
-    <div class='fancy-file-name'>
-	    <button class="upload_button" style="width:210px; height:210px";>Upload</button></div>
+    <div class='fancy-file-name'><a href="#pop">
+	    <button class="upload_button" style="width:210px; height:210px";><img src="upload.png" height="120px" width="120px"></button></a></div>
     <div class='input-container'>    	
 	
       <input name="fileToUpload" type="file" id="file" accept="image/*" capture="camera" style="width:100%; height:210px;"> 
 </div>
 </div>
-
 </form>
+
+<a href="#x" class="overlay" id="pop"></a>
+<div class="popup">
+	<h2>LogIn</h2>
+    <p>Please Enter your details here</p>
+    <div>
+	    <form method="post">
+        <label for="username">Username</label>
+        <input type="text" name="username" value="" placeholder="Enter Username"></form>
+    </div>
+    <div>
+	    <form method="post">
+        <label for="password">Password</label>
+        <input type="text" name="password" value="" placeholder="Enter Password"></form>
+    </div>
+    <input type="submit" value="LogIn" id="login_button"><a class="close" href="#close"></a>
+</div>
+
+<a class="close" href="#close"></a>
+
 <?php
 if ( isset($_SESSION["photo"]) ) {
 echo "<img src=".$_SESSION["photo"]." style='width:200px; height:200px;'>";
