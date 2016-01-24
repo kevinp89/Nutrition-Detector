@@ -112,7 +112,7 @@ nav ul li{
 }
 
 .output{
-	
+	z-index: 9999;
 	height: 500px;
 	width: 500px;
 	clear: both;

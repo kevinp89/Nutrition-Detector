@@ -198,6 +198,7 @@ div.input-container {
 }
 
 div.input-container input {
+	z-index: 1000000;
 	position: inherit;
 	border-radius: 50%;
 	background: aqua;
