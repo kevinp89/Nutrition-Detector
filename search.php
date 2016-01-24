@@ -22,7 +22,7 @@
 			<ul>
 				<li><a href="index.php"> <img height="40px" width="40px" src="simple-orange-house-md.png"> </a></li>
 				<li><a href="search.php"> <img height="40px" width="40px" src="search.png"> </a></li>
-				<li><a href="facts.php"> <img height="40px" width="40px" src="facts.png"> </a></li>
+				<li><a href="facts.php"> <img height="40px" width="40px" src="BMI.png"> </a></li>
 				<li><a href="aboutUs.php"> <img height="40px" width="40px" src="aboutUs.png"> </a></li>
 				
 			</ul>

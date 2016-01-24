@@ -22,7 +22,7 @@
 			<ul>
 				<li><a href="index.php"> <img height="40px" width="40px" src="simple-orange-house-md.png"> </a></li>
 				<li><a href="search.php"> <img height="40px" width="40px" src="search.png"> </a></li>
-				<li><a href="facts.php"> <img height="40px" width="40px" src="facts.png"> </a></li>
+				<li><a href="facts.php"> <img height="40px" width="40px" src="BMI.png"> </a></li>
 				<li><a href="aboutUs.php"> <img height="40px" width="40px" src="aboutUs.png"> </a></li>
 				
 			</ul>
@@ -38,12 +38,14 @@
            <h3> Calculate your BMI!</h3>
            
 		   <form method="post" action="facts.php">
-			   <label> Sex* </label>
+			   <!--
+<label> Sex* </label>
 			    <select name="sex" required> 
 				    <option value="not selected"> Select One </option>
 				    <option value="male"> Male </option>
 				    <option value="female"> Female </option>
 			    </select>
+-->
 		   
 			    <label> Height* </label>
 			    <select name="height" required>
@@ -92,8 +94,10 @@
 				    <option value="7ft 5in"> 7ft 5in </option>
 			    </select>
 
-			    <label>Age</label>
+			    <!--
+<label>Age</label>
 			    	<input type="text" name="age" size="10">
+-->
 			    <label>Mass</label>
 			        <input type="text" name="mass" size="6">
 			        <select name="massUnit">
@@ -105,12 +109,11 @@
 			<?php
 				include("header");
 				$sex = $_POST["sex"];
-				
-				if($sex != "not selected"){
+				$height = $_POST["height"];
+				if($height != "not selected"){
 					
 				
 				
-					$height = $_POST["height"];
 					$age = $_POST["age"];
 					$mass = $_POST["mass"];
 					$massUnit = $_POST["massUnit"];
@@ -151,6 +154,16 @@
 				
 				
 			?></p>
+    </div>
+    
+    <div class="moreFacts">
+	    <h2><strong> Did you know! </strong></h2>
+	    <ul>
+		    <li><p>If you exercise rather than going on a diet, you will lose weight faster! This is because going on a diet will make you look like a skeleton!</p></li>
+		    <li><p>Being 130lbs doesn't mean you are the weakest, in fact you might just have the highest relative strength in the gym! Just train hard, lift heavy and watch you eating habbits!!!</p></li>
+	    </ul>
+	    	
+	    
     </div>
   </article>
 </section>
