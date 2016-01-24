@@ -171,7 +171,16 @@ nav ul li{
 		background-size: cover;
 		height: 960;
 		width: 540;
+	}
 	
+	.b-orange{
+		overflow: scroll;
+	}
+	
+	.b-orange div{
+		position: relative;
+		display: table;
+	}
 	
 	.fancy-file-name img {
 		height: 150px;
@@ -355,6 +364,18 @@ nav ul li{
 .moreFacts ul {
 	list-style: hiragana;
 	
+}
+
+.moreFacts h2:hover, li:hover{
+	-webkit-transform: scale(1.1, 1.1);
+    -moz-transform: scale(1.1, 1.1);
+    -ms-transform: scale(1.1, 1.1);
+    -o-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+    
+    transition:  .2s ease-in-out;
+    -moz-transition:  .2s ease-in-out;
+    -webkit-transition:  .2s ease-in-out;
 }
 
 /*
