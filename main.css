@@ -357,6 +357,10 @@ nav ul li{
 	width: 500px;
 }
 
+.moreFacts h2{
+	color: #e5e2e2;
+}
+
 .moreFacts ul {
 	list-style: hiragana;
 	
