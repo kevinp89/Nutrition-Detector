@@ -36,7 +36,8 @@ if ($uploadOk == 0) {
     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {  
         //echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
 	
-        $path =  "http://52.90.192.92/images/".basename( $_FILES["fileToUpload"]["name"]);
+        //$path =  "http://52.90.192.92/images/".basename( $_FILES["fileToUpload"]["name"]);
+	$path = "https://sprayitaway.com/wp-content/uploads/2013/08/apple_by_grv422-d5554a4.jpg";
 	//echo $path;
 	run($path);
     } else {
@@ -153,10 +154,10 @@ div.fancy-file-name {
         1px 1px 3px #222;
     font-weight: bold;
     font-family: Courier New, fixed;
-    width: 155px;
+    width: 100%;
     font-size: 12px;
     padding: 1px 4px;
-    height: 100px;
+    height: 210px;
 }
 div.input-container {
     position: absolute;
@@ -183,20 +184,13 @@ div.input-container input {
 </div>
 
 <section class="panel b-blue" id="home">
-<!--
-	    <div class="jumbotron">
 
-		<div class="backCircle"></div>
-		<button class="upload_button"><img src="upload.png" style="width:70%; height:70%; display:block; margin-right:auto; margin-left:auto; ">Upload Photo</button>
-		
-	    </div>
--->
 <form action="index.php" method="post" enctype="multipart/form-data" id="form">
 <div class='fancy-file'>
-    <div class='fancy-file-name'><img src="upload.png" style="width:155px; height:100px;"></div>
+    <div class='fancy-file-name'><!--<img src="upload.png" style="width:100%; height:100px;">--><button class="upload_button" style="width:100%; height:210px";></div>
     <div class='input-container'>    	
 	
-      <input name="fileToUpload" type="file" id="file" accept="image/*" capture="camera" style="width:155px; height:100px;"> 
+      <input name="fileToUpload" type="file" id="file" accept="image/*" capture="camera" style="width:100%; height:210px;"> 
 </div>
 </div>
 
@@ -204,8 +198,8 @@ div.input-container input {
 <?php
 if ( isset($_SESSION["photo"]) ) {
 echo "<img src=".$_SESSION["photo"]." style='width:200px; height:200px;'>";
-echo "<h1 class='animated fadeInDown'>".$_SESSION["name"]."</h1>";
-echo "<h1 class='animated zoomIn'>Calories: ".$_SESSION["calories"]."</h1>";
+echo "<h1 class='animated infinite bounce'>".$_SESSION["name"]."</h1>";
+echo "<h1>Calories: ".$_SESSION["calories"]."</h1>";
 
 } 
 ?>
@@ -320,3 +314,22 @@ $('div.fancy-file input:file').bind('change blur', function() {
 });
 }
 </script>
+</body>
+</html>
+
+<html>
+	<head>
+		
+		
+	</head>
+	<body>
+				
+		
+
+
+				
+		
+	</body>
+	
+	
+</html>
