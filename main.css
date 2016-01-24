@@ -353,48 +353,19 @@ nav ul li{
 	margin-left: 100px;
 }
 
-progress{
-	display:inline-block;
-	width: 190px;
-	height: 20px;
-	padding:15px 0 0 0;
-	margin:0;
-	background:none;
-	border: 0;
-	border-radius: 15px;
-	text-align: left;
-	position:relative;
-	font-family: Arial, Times, sans-serif;
-	font-size: 0.8em;	
+.progress,
+.progress:hover {
+	background: #1010f0whitecornflower;
+	padding: 0;
+	height: 30 px;
+	width: 68px;
 }
-progress::-webkit-progress-bar{
-	height: 11px;
-	width:150px;
-	margin:0 auto;
-	background-color: #aba9a9;
-	border-radius: 15px;
-	margin:0 auto;
-	background-color: #CCC;
-	border-radius: 15px;
-	box-shadow: 0px 0px 6px #777 inset;
+#progress-bar {
+	background: #000;
+	display: block;
+	height: 30px;
+	width: 0;
 }
-progress:-webkit-progress-value {
-	display: inline-block;
-	float:left;
-	height:11px;
-	margin:0px -10px 0 0;
-	background: #F70;
-	border-radius: 15px;
-	box-shadow:0px 0px 6px #777 inset;
-}
-progress:after{
-	margin:-26px 0 0 -7px;
-	padding:0;
-	display:inline-block;
-	float:left;
-	content: attr(value) '%';
-}
-
 
 .moreFacts{
 	margin-left: 10px;

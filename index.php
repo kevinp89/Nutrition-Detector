@@ -201,17 +201,28 @@ div.input-container input {
 </head>
 
 <body>
+	<script>
+		var progress =0;
+		function showProgress(){
+			$('#progress-button').addClass('progress').html('<span id="progress-bar"></span>span>');
+			setInterval(function()){
+			$('#progress-bar').width(progress);
+			progress++;
+			},500);
+		}
+
+		
+	</script>
+	
 <div class="nav-container">
 	<nav>
 		<ul>
 			<li><a title="Home" href="index.php"> <img height="40px" width="40px" src="simple-orange-house-md.png"></a></li>
 			<li><a title="Search for food facts" href="search.php"> <img height="40px" width="40px" src="search.png"> </a></li>
 			<li><a title="BMI and facts" href="facts.php"> <img height="40px" width="40px" src="BMI.png"> </a></li>
-<<<<<<< HEAD
 			<li><a title="Contact Us" href="aboutUs.php"> <img height="40px" width="40px" src="fruit-hoot.jpg"> </a></li>		
-=======
 			<li><a title="Contact Us" href="aboutUs.php"> <img height="40px" width="40px" src="aboutUs.png"> </a></li>		
->>>>>>> d8d365e7dfa7cf1e90fe7a02268f9a1c714a1b47
+
 		</ul>
 	</nav>			
 </div>
@@ -221,7 +232,7 @@ div.input-container input {
 <form action="index.php" method="post" enctype="multipart/form-data" id="form">
 <div class='fancy-file'>
     <div class='fancy-file-name'><a href="#pop">
-	    <button class="upload_button" style="width:210px; height:210px";><img src="upload.png" height="120px" width="120px"></button></a></div>
+	    <button class="upload_button" style="width:210px; height:210px";><img src="upload.png" height="120px" width="120px"><onClick="showProgress()"</button></a></div>	    
     <div class='input-container'>    	
 	
       <input name="fileToUpload" type="file" id="file" accept="image/*" capture="camera" style="width:220px; height:220px;"> 
