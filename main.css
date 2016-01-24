@@ -132,6 +132,14 @@ nav ul li{
 		overflow: hidden;
 	}
 	
+	.fancy-file{
+		height:960px;
+		width: 640px;
+		background: url("grapes.jpg");
+		background-size: 960px 640px;
+	}
+
+	
 	.fancy-file-name{
 		height:960px;
 		width: 640px;
