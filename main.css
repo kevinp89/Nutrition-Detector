@@ -6,9 +6,12 @@ body {
   font-family: 'Lato';
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  overflow: hidden;
 }
 
+.upload_button img{
+	height: 230px;
+	width: 230px;
+}
 
 .modalDialog{
 	position: fixed;
@@ -85,7 +88,7 @@ nav ul {
 	margin-left: 0;
 	margin-top: 10px;
 	padding: 10px;
-	overflow: hidden;
+
 }
 
 nav ul li{
@@ -108,8 +111,42 @@ nav ul li{
     -webkit-transition:  .2s ease-in-out;
 }
 
+.output{
+	z-index: 9999;
+	height: 500px;
+	width: 500px;
+	clear: both;
+	margin: 130px 0 0 500px;
+	top:0; left: 0; right: 0; bottom: 0;
+	text-align: center;
+	float: center;
+	position: absolute;
+	
+}
 
 @media screen and (max-width: 760px){
+	
+	body{
+		height: 960px;
+		width: 640px;
+		overflow: hidden;
+	}
+	
+	.fancy-file{
+		height:960px;
+		width: 640px;
+		background: url("grapes.jpg");
+		background-size: 960px 640px;
+	}
+
+	
+	.fancy-file-name{
+		height:960px;
+		width: 640px;
+		background: url("grapes.jpg");
+		background-size: 960px 640px;
+	}
+	
 	nav ul li{
 		z-index: 90000;
 		box-sizing: border-box;
@@ -117,9 +154,23 @@ nav ul li{
 		padding-top: 55px;
 	}
 	
+	.upload_button{
+		position: absolute;
+		border-radius: 50%;
+		margin: auto;
+		top:0; bottom: 0; left: 0; right:0;
+		text-align: center; float: center;
+		height: 100px;
+		width: 100px;
+		background: #7edc13;
+	
+	}
+	
 	.jumbotron{
 		background:url("grapes.jpg" ) no-repeat center center fixed;
 		background-size: cover;
+		height: 960;
+		width: 540;
 	}
 	
 	.b-orange{
@@ -167,7 +218,6 @@ nav ul li{
 .panel {
   min-height: 100vh;
   margin-left: 60px;
-  overflow: hidden;
 }
 
 
@@ -193,7 +243,8 @@ nav ul li{
 }
 
 .backCircle{
-	margin: auto;
+	margin-left: 108px;
+	margin-top:  177px;
 	top: 0;
 	right: 0;
 	bottom: 0;
@@ -304,6 +355,10 @@ nav ul li{
 .moreFacts{
 	margin-left: 10px;
 	width: 500px;
+}
+
+.moreFacts h2{
+	color: #e5e2e2;
 }
 
 .moreFacts ul {
