@@ -180,7 +180,8 @@ box-shadow:
 .upload_button{
 	position: absolute;
 	border-radius: 50%;
-	margin: auto;
+	margin-left: 130px;
+	margin-top: 200px;
 	top:0; bottom: 0; left: 0; right:0;
 	text-align: center; float: center;
 	height: 300px;
@@ -202,7 +203,8 @@ div.input-container input {
 	position: inherit;
 	border-radius: 50%;
 	background: aqua;
-	margin:auto;
+	margin-top: 200px;
+	margin-left: 130px;
 	text-align: center;
 	float: center;
 	top:0; bottom: 0; left: 0; right: 0;
