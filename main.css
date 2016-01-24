@@ -139,6 +139,17 @@ nav ul li{
 		margin: 50px auto;
 	}
 	
+.b-red{
+	padding-left: 6px;
+	background: url('factsImage.jpg');
+	background-size: cover;
+}
+
+.b-red h3, label, #bmi{
+	color: #f0eded;
+	font-size: 20;
+}
+	
 #search{
 	padding:8px 20px;
 	background: #0e9696;
