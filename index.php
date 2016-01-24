@@ -158,7 +158,7 @@ div.fancy-file {
 }
 
 div.fancy-file-name {
-	background: url("grapes.jpg");
+	background: url("https://cdn.vectorstock.com/i/composite/84,61/beautiful-abstract-background-vector-928461.jpg");
 	background-size: cover;
     float: left;
     border-radius: 3px;
