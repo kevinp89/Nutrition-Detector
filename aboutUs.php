@@ -21,8 +21,8 @@
 			<nav>
 			<ul>
 				<li><a title="Home" href="index.php"> <img height="40px" width="40px" src="simple-orange-house-md.png"></a></li>
-				<li><a title="Search" href="search.php"> <img height="40px" width="40px" src="search.png"> </a></li>
-				<li><a title="BMI & Facts" href="facts.php"> <img height="40px" width="40px" src="BMI.png"> </a></li>
+<!--				<li><a title="Search" href="search.php"> <img height="40px" width="40px" src="search.png"> </a></li>
+				<li><a title="BMI & Facts" href="facts.php"> <img height="40px" width="40px" src="BMI.png"> </a></li>-->
 				<li><a title="About Us" href="aboutUs.php"> <img height="40px" width="40px" src="aboutUs.png"> </a></li>
 				
 			</ul>
@@ -71,7 +71,7 @@
 	      		<li>University Of Toronto (year 2)</li></ol>
 	      		
 	      	</ul></div>
-	      
+	     <!-- 
 	      <div id="kp">
 	      <ul >
 	      	<li>Kevin Patel</li>
@@ -82,7 +82,7 @@
 	      		
 	      	</ul></div>
 
-    </div>
+    </div>-->
   </article>
 </section>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js">

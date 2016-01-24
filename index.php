@@ -221,8 +221,8 @@ div.input-container input {
 	<nav>
 		<ul>
 			<li><a title="Home" href="index.php"> <img height="40px" width="40px" src="simple-orange-house-md.png"> </a></li>
-			<li><a title="Search" href="search.php"> <img height="40px" width="40px" src="search.png"> </a></li>
-			<li><a title="BMI & Facts" href="facts.php"> <img height="40px" width="40px" src="facts.png"> </a></li>
+			<!--<li><a title="Search" href="search.php"> <img height="40px" width="40px" src="search.png"> </a></li>
+			<li><a title="BMI & Facts" href="facts.php"> <img height="40px" width="40px" src="facts.png"> </a></li>-->
 			<li><a title="About us" href="aboutUs.php"> <img height="40px" width="40px" src="aboutUs.png"> </a></li>		
 		</ul>
 	</nav>			
@@ -297,16 +297,6 @@ if ( isset($_SESSION["photo"]) ) {
 	      		<ol>
 	      		<li>Email: <a href="#">monica.iqbal@mail.utoronto.ca</a></li>
 	      		<li>Phone: (647)-830-4256</a></li>
-	      		<li>University Of Toronto (year 2)</li></ol>
-	      		
-	      	</ul></div>
-	      
-	      <div id="kp">
-	      <ul >
-	      	<li>Kevin Patel</li>
-	      		<ol>
-	      		<li>Email: <a href="#">kp.patel@mail.utoronto.ca</a></li>
-	      		<li>Phone: (905)-463-1366</a></li>
 	      		<li>University Of Toronto (year 2)</li></ol>
 	      		
 	      	</ul></div>
