@@ -218,36 +218,20 @@ div.input-container input {
 
 </head>
 
-<body>
-	<script>
-		var progress =0;
-		function showProgress(){
-			$('#progress-button').addClass('progress').html('<span id="progress-bar"></span>span>');
-			setInterval(function()){
-			$('#progress-bar').width(progress);
-			progress++;
-			},500);
-		}
-
-		
-	</script>
-	
+<body>	
 <div class="nav-container">
 	<nav>
 		<ul>
 			<li><a title="Home" href="index.php"> <img height="40px" width="40px" src="simple-orange-house-md.png"></a></li>
 			<li><a title="Search for food facts" href="search.php"> <img height="40px" width="40px" src="search.png"> </a></li>
 			<li><a title="BMI and facts" href="facts.php"> <img height="40px" width="40px" src="BMI.png"> </a></li>
-<<<<<<< HEAD
 			<li><a title="Contact Us" href="aboutUs.php"> <img height="40px" width="40px" src="fruit-hoot.jpg"> </a></li>		
 			<li><a title="Contact Us" href="aboutUs.php"> <img height="40px" width="40px" src="aboutUs.png"> </a></li>		
 
-=======
 
 				
 
 			<li><a title="Contact Us" href="aboutUs.php"> <img height="40px" width="40px" src="aboutUs.png"> </a></li>		
->>>>>>> ade13c92cd3f4b78f7aa98f0a19a1b6f6c7db12b
 		</ul>
 	</nav>			
 </div>
@@ -256,18 +240,15 @@ div.input-container input {
 
 <form action="index.php" method="post" enctype="multipart/form-data" id="form">
 <div class='fancy-file'>
-<<<<<<< HEAD
     <div class='fancy-file-name'><a href="#pop">
-	    <button class="upload_button" style="width:210px; height:210px";><img src="upload.png" height="120px" width="120px"><onClick="showProgress()"</button></a></div>	    
-    <div class='input-container'>    	
-=======
+	    <button class="upload_button" style="width:210px; height:210px";><img src="upload.png" height="120px" width="120px"><onSubmit="showProgress()"</button></a></div>	    
+    <div class='input-container'>
     <div class='fancy-file-name'>
 	    <div class="backCircle"></div>
 	    <button class="upload_button"><img src="upload.png" height="120px" width="120px"></button>
 	</div>
 	
     <div class='input-container'> 
->>>>>>> ade13c92cd3f4b78f7aa98f0a19a1b6f6c7db12b
 	
       <input name="fileToUpload" type="file" id="file" accept="image/*" capture="camera" style="width:220px; height:220px;"> 
     </div>
@@ -330,6 +311,16 @@ $('div.fancy-file input:file').bind('change blur', function() {
 $(window).load(function () {
 			$('#myModal').modal('show');
 });
+</script>
+<script>
+		var progress =0;
+		function showProgress(){
+			$('#progress-button').addClass('progress').html('<span id="progress-bar"></span>span>');
+			setInterval(function()){
+			$('#progress-bar').width(progress);
+			progress++;
+			},500);
+		}
 </script>
 
 </body>
