@@ -24,8 +24,9 @@
 <section class="panel b-blue" id="home">
 
 	    <div class="jumbotron">
-		<button class="upload_button"><img src="upload.png" style="width:70%; height:70%; display:block; margin-right:auto; margin-left:auto; ">Upload Photo</button>
+		<button class="upload_button"><img src="upload.png" style="width:70%; height:70%; display:block; margin-right:auto; margin-left:auto; ">Upload Photo</  button>
 	    </div>
+	    < progress id ="progress" max="100" value="77"></progress>
  </section>
 
 
