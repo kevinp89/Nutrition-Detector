@@ -128,8 +128,13 @@ nav ul li{
 	
 	body{
 		height: 960px;
-		width: 640;
+		width: 640px;
 		overflow: hidden;
+	}
+	
+	.fancy-file-name{
+		height:960px;
+		width: 640px;
 	}
 	
 	nav ul li{
