@@ -202,8 +202,8 @@ div.input-container input {
 		<ul>
 			<li><a title="Home" href="index.php"> <img height="40px" width="40px" src="simple-orange-house-md.png"></a></li>
 			<li><a title="Search for food facts" href="search.php"> <img height="40px" width="40px" src="search.png"> </a></li>
-			<li><a title="BMI and facts" href="facts.php"> <img height="40px" width="40px" src="BMI.png"> </a></li>
-			<li><a title="Contact Us" href="aboutUs.php"> <img height="40px" width="40px" src="aboutUs.png"> </a></li>		
+			<li><a title="BMI and facts" href="facts.php"> <img height="40px" width="40px" src=""> </a></li>
+			<li><a title="Contact Us" href="aboutUs.php"> <img height="40px" width="40px" src="fruit-hoot.jpg"> </a></li>		
 		</ul>
 	</nav>			
 </div>
