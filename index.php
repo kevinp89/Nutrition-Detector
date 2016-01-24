@@ -232,9 +232,9 @@ div.input-container input {
     	<button class="upload_button"><a>Upload Photo</a><img src="upload.png"></button></div>
     <div class='input-container'>    	
 	
-      <input name="fileToUpload" type="file" id="file" accept="image/*" capture="camera"></div>
+      <input name="fileToUpload" type="file" id="file" accept="image/*" capture="camera">
 
-
+<div class="output">
 <?php
 
 if ( isset($_SESSION["photo"]) ) {
@@ -246,8 +246,8 @@ if ( isset($_SESSION["photo"]) ) {
 		echo "<h2>".$_SESSION["item"][$i]." has ".$_SESSION["item"][$i+1]." Calories"."</h2>";
 	}	
 }
-?>
-</div>
+?></div>
+</div></div>
 </form>
 <!--
 </section>

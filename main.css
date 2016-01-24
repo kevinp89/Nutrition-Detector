@@ -111,6 +111,17 @@ nav ul li{
     -webkit-transition:  .2s ease-in-out;
 }
 
+.output{
+	
+	height: 500px;
+	width: 500px;
+	clear: both;
+	margin: auto;
+	top:0; left: 0; right: 0; bottom: 0;
+	text-align: center;
+	float: center;
+	position: absolute;
+}
 
 @media screen and (max-width: 760px){
 	
