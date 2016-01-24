@@ -1,3 +1,4 @@
+<!--
 <html>
 	<head>
 		<title> Calorie Detector </title>
@@ -101,3 +102,4 @@
 	
 	
 </html>
+-->
