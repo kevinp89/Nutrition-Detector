@@ -103,7 +103,7 @@
 			        <select name="massUnit">
 				        <option value="lbs"> lbs </option>
 				        <option value="kg"> kg </option> </select>
-				        <br/>
+				        
 				<input type="submit" value="calculate" id="calButton">
 			</form>
 			<p id="bmi">
