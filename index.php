@@ -214,7 +214,6 @@ div.input-container input {
 </head>
 
 <body>
-<!--
 <div class="nav-container">
 	<nav>
 		<ul>
@@ -226,8 +225,7 @@ div.input-container input {
 	</nav>			
 </div>
 
-<section class="panel b-blue" id="home">
--->
+<!-- <section class="panel b-blue" id="home"> -->
 <form action="index.php" method="post" enctype="multipart/form-data" id="form">
 <div class='fancy-file'>
     <div class='fancy-file-name'>

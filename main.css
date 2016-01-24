@@ -6,7 +6,6 @@ body {
   font-family: 'Lato';
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  overflow: hidden;
 }
 
 .upload_button img{
@@ -171,7 +170,6 @@ nav ul li{
 .panel {
   min-height: 100vh;
   margin-left: 60px;
-  overflow: hidden;
 }
 
 
