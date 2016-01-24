@@ -232,6 +232,7 @@ div.input-container input {
 <form action="index.php" method="post" enctype="multipart/form-data" id="form">
 <div class='fancy-file'>
     <div class='fancy-file-name'>
+	    <div class="backCircle"></div>
     	<button class="upload_button"><a>Upload Photo</a><img src="upload.png"></button></div>
     <div class='input-container'>    	
 	
