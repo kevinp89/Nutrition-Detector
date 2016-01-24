@@ -31,14 +31,19 @@
 		</div>
 
 
-<section class="panel b-blue" id="home">
 
-	    <div class="jumbotron">
-		<button id="button_id" />
-	    </div>
- </section>		
-			
-		</div>
+<div class="search">
+<section class="panel b-yellow" id="2">
+  
+    <div class="panel__content" id="about-content">
+      <h1 class="panel__headline"><i class="fa fa-bolt"></i>&nbsp;Search</h1>
+      <div class="panel__block"></div>
+      
+      
+        </div>
+</section></div>
+
+
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js">
 		
 		<script src="index.js"></script>
