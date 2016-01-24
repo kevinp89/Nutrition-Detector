@@ -198,3 +198,25 @@ nav ul li{
 #nd{
 	margin-left: 100px;
 }
+
+.moreFacts{
+	margin-left: 10px;
+	width: 500px;
+}
+
+.moreFacts ul {
+	list-style: hiragana;
+	
+}
+
+.moreFacts h2:hover, li:hover{
+	-webkit-transform: scale(1.1, 1.1);
+    -moz-transform: scale(1.1, 1.1);
+    -ms-transform: scale(1.1, 1.1);
+    -o-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+    
+    transition:  .2s ease-in-out;
+    -moz-transition:  .2s ease-in-out;
+    -webkit-transition:  .2s ease-in-out;
+}
