@@ -158,6 +158,7 @@ div.fancy-file {
 }
 
 div.fancy-file-name {
+	
     float: left;
     border-radius: 3px;
     background-color: #fff;
@@ -170,14 +171,39 @@ div.fancy-file-name {
     width: 100%;
     font-size: 12px;
     padding: 1px 4px;
-    height: 210px;
+    height: 600px;
 }
+
+.upload_button{
+	position: absolute;
+	border-radius: 50%;
+	margin: auto;
+	top:0; bottom: 0; left: 0; right:0;
+	text-align: center; float: center;
+	height: 300px;
+	width: 300px;
+	background: #ff0000;
+}
+
 div.input-container {
+
+	float: center;
+	text-align: center;
+	margin: auto;
     position: absolute;
-    top: 0; left: 0;
+    top: 0; left: 0;bottom:0; right: 0;
 }
 
 div.input-container input {
+	position: inherit;
+	border-radius: 50%;
+	background: aqua;
+	margin:auto;
+	text-align: center;
+	float: center;
+	top:0; bottom: 0; left: 0; right: 0;
+	width: 300px;
+	height: 300px;
     opacity: 0;
 }
 </style>
@@ -201,10 +227,11 @@ div.input-container input {
 -->
 <form action="index.php" method="post" enctype="multipart/form-data" id="form">
 <div class='fancy-file'>
-    <div class='fancy-file-name'><!--<img src="upload.png" style="width:100%; height:100px;">--><button class="upload_button" style="width:100%; height:210px";></div>
+    <div class='fancy-file-name'><!--<img src="upload.png" style="width:100%; height:100px;">-->
+    <button class="upload_button"></button></div>
     <div class='input-container'>    	
 	
-      <input name="fileToUpload" type="file" id="file" accept="image/*" capture="camera" style="width:100%; height:210px;"> 
+      <input name="fileToUpload" type="file" id="file" accept="image/*" capture="camera"> 
 </div>
 </div>
 
