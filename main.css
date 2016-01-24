@@ -9,6 +9,10 @@ body {
   overflow: hidden;
 }
 
+.upload_button img{
+	height: 230px;
+	width: 230px;
+}
 
 .modalDialog{
 	position: fixed;
@@ -85,7 +89,7 @@ nav ul {
 	margin-left: 0;
 	margin-top: 10px;
 	padding: 10px;
-	overflow: hidden;
+
 }
 
 nav ul li{

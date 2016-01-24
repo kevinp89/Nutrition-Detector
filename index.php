@@ -158,20 +158,23 @@ div.fancy-file {
 }
 
 div.fancy-file-name {
-	
+	background: url("grapes.jpg");
+	background-size: cover;
     float: left;
     border-radius: 3px;
     background-color: #fff;
-    box-shadow:
+    /*
+box-shadow:
         inset 1px 1px 3px #eee,
         inset -1px -1px 3px #888,
         1px 1px 3px #222;
+*/
     font-weight: bold;
     font-family: Courier New, fixed;
     width: 100%;
     font-size: 12px;
     padding: 1px 4px;
-    height: 600px;
+    height: 750px;
 }
 
 .upload_button{
@@ -182,7 +185,7 @@ div.fancy-file-name {
 	text-align: center; float: center;
 	height: 300px;
 	width: 300px;
-	background: #ff0000;
+	background: #7edc13;
 }
 
 div.input-container {
@@ -227,15 +230,13 @@ div.input-container input {
 -->
 <form action="index.php" method="post" enctype="multipart/form-data" id="form">
 <div class='fancy-file'>
-    <div class='fancy-file-name'><!--<img src="upload.png" style="width:100%; height:100px;">-->
-    <button class="upload_button"></button></div>
+    <div class='fancy-file-name'>
+    	<button class="upload_button"><a>Upload Photo</a><img src="upload.png"></button></div>
     <div class='input-container'>    	
 	
-      <input name="fileToUpload" type="file" id="file" accept="image/*" capture="camera"> 
-</div>
-</div>
+      <input name="fileToUpload" type="file" id="file" accept="image/*" capture="camera"></div>
 
-</form>
+
 <?php
 
 if ( isset($_SESSION["photo"]) ) {
@@ -246,12 +247,10 @@ if ( isset($_SESSION["photo"]) ) {
 	for ($i=0; $i<sizeof($_SESSION["item"]); $i=$i+2) {
 		echo "<h2>".$_SESSION["item"][$i]." has ".$_SESSION["item"][$i+1]." Calories"."</h2>";
 	}	
-} 
-else {
-	echo "Please Click above to take photo";
 }
 ?>
-
+</div>
+</form>
 <!--
 </section>
 
