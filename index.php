@@ -206,15 +206,21 @@ div.input-container input {
 		<ul>
 			<li><a title="Home" href="index.php"> <img height="40px" width="40px" src="simple-orange-house-md.png"></a></li>
 			<li><a title="Search for food facts" href="search.php"> <img height="40px" width="40px" src="search.png"> </a></li>
-			<li><a title="BMI and facts" href="facts.php"> <img height="40px" width="40px" src="BMI.png"> </a></li>
-			<li><a title="Contact Us" href="aboutUs.php"> <img height="40px" width="40px" src="aboutUs.png"> </a></li>		
+			<li><a title="BMI and facts" href="facts.php"> <img height="40px" width="40px" src=""> </a></li>
+			<li><a title="Contact Us" href="aboutUs.php"> <img height="40px" width="40px" src="fruit-hoot.jpg"> </a></li>		
 		</ul>
 	</nav>			
 </div>
 
 <section class="panel b-blue" id="home">
 
+	    <div class="jumbotron">
+		<button class="upload_button"><img src="upload.png" style="width:70%; height:70%; display:block; margin-right:auto; margin-left:auto; ">Upload Photo</  button>
+	    </div>
+ </section>
+
 <form action="index.php" method="post" enctype="multipart/form-data" id="form">
+< progress id ="progress" max="100" value="77"></progress>
 <div class='fancy-file'>
     <div class='fancy-file-name'><a href="#pop">
 	    <button class="upload_button" style="width:210px; height:210px";><img src="upload.png" height="120px" width="120px"></button></a></div>
