@@ -200,6 +200,38 @@ nav ul li{
 		position: relative;
 		display: table;
 	}
+	
+	.fancy-file-name img {
+		height: 150px;
+		width: 150px;
+	}
+	.fancy-file-name button{
+		height: 300px;
+		width: 300px;
+	}
+	
+	div.input-container {
+	    position: absolute;
+	    top:0;
+	    left: 0;
+	    bottom: 0;
+	    right:0;
+	    margin-left: auto;
+	    margin-top: auto;     
+		}
+
+	div.input-container input {
+	    opacity: 0; 
+	    height: 250px;
+	    width: 250px;
+	    top: 0; bottom: 0; right:0; left: 0;
+	    text-align: center;
+	    margin:auto;
+	    float: center;
+	    position: absolute;
+	    
+    
+	}
 }
 
 .panel {
