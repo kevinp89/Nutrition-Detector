@@ -107,8 +107,21 @@ nav ul li{
 .b-orange div{
 	margin-left: 30px;
 }
-#button_id{
-	position:relative;
+.upload_button{
+	margin: auto;
+    left:0; right:0;
+    top:0; bottom:0;
+    position: absolute;
+    width: 210px;
+    height: 210px;
+	border: 2px solid;
+	border-radius: 100px;
+	background-color:#e2ec31;
+	text-align:center;
+	float: center;
+    padding-left: 15px;
+	}
+   
 }
 
 .b-red{

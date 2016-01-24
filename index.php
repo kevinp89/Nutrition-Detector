@@ -1,22 +1,12 @@
 <html>
 	<head>
 		<title> Calorie Detector </title>
-		<link rel="stylesheet" type="text/css" href="animate.css"> 
 		<link rel="stylesheet" type="text/css" href="main.css"> 
 		<link rel="stylesheet" type="text/css" href="normalize.css"> 
 		
 	</head>
 	<body>
-		<script src="jquery-1.12.0.js"></script>
-		
-		<script src="jquery-1.12.0.min.js"></script>
-	
-		<script type="text/javascript">
-			$(document).ready(function() {
 				
-			});
-		</script>
-		
 		<div class="nav-container">
 			<nav>
 			<ul>
@@ -34,7 +24,7 @@
 <section class="panel b-blue" id="home">
 
 	    <div class="jumbotron">
-		<button id="button_id" />
+		<button class="upload_button"><img src="upload.png" style="width:70%; height:70%; display:block; margin-right:auto; margin-left:auto; ">Upload Photo</button>
 	    </div>
  </section>		
 			
